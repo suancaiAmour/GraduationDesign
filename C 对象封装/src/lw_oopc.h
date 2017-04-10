@@ -1,6 +1,6 @@
 // Copyright (C) 2008,2009,2010 by Tom Kao & MISOO Team & Yonghua Jin. All rights reserved.
 // Released under the terms of the GNU Library or Lesser General Public License (LGPL).
-// Author: Tom Kao(中文名：高焕堂)，MISOO团队，Yonghua Jin(中文名：金永华)
+// Author: Tom Kao(梅鈥撆捚掆垰藲拢鈭垙铿偮棵冣垰)拢篓MISOO脮鈮堚垈鈥澛Ｂ╕onghua Jin(梅鈥撆捚掆垰藲拢鈭╋？鈥澛柯劉)
 //
 // Redistribution and use in source and binary forms, with or without
 // modification, are permitted provided that the following conditions are
@@ -27,11 +27,8 @@
 #ifndef LW_OOPC_H_INCLUDED_
 #define LW_OOPC_H_INCLUDED_
 
-// 配置宏(两种配置选其一):
-// LW_OOPC_USE_STDDEF_OFFSETOF          表示使用C标准定义的offsetof
-// LW_OOPC_USE_USER_DEFINED_OFFSETOF    表示使用用户自定义的lw_oopc_offsetof宏
-#define LW_OOPC_USE_STDDEF_OFFSETOF
-//#define LW_OOPC_USE_USER_DEFINED_OFFSETOF
+//#define LW_OOPC_USE_STDDEF_OFFSETOF
+#define LW_OOPC_USE_USER_DEFINED_OFFSETOF
 
 #ifdef LW_OOPC_USE_STDDEF_OFFSETOF
 #include <stddef.h>
@@ -39,32 +36,25 @@
 #endif
 
 #ifdef LW_OOPC_USE_USER_DEFINED_OFFSETOF
-// 有些环境可能不支持，不过，这种情形极少出现
 #define LW_OOPC_OFFSETOF(s,m) (size_t)&(((s*)0)->m)
 #endif
 
-// 自定义的内存分配函数
-void* lw_oopc_malloc(size_t size, const char* type, const char* file, int line);
-// 自定义的内存释放函数
+void* lw_oopc_malloc(int size, const char* type, const char* describe);
 void lw_oopc_free(void* memblock);
-// 检测是否内存泄露
 void lw_oopc_report();
 
-// 用来调试 找到内存泄露的地方 要求使用者输入
-#define lw_oopc_file_line_params const char* file, int line
+#define lw_oopc_file_line_params const char* describe
 
-// 接口
 #define INTERFACE(type)             \
 typedef struct type type;           \
 void type##_ctor(type* t);          \
-int type##_dtor(type* t);           \
+void type##_dtor(type* t);           \
 struct type
 
-// 抽象类 不能创建对象
 #define ABS_CLASS(type)             \
 typedef struct type type;           \
 void type##_ctor(type* t);          \
-int type##_dtor(type* t);           \
+void type##_dtor(type* t);           \
 void type##_release(type* t);       \
 void type##_retain(type* t);        \
 struct type                         \
@@ -72,12 +62,11 @@ struct type                         \
 
 #define END_ABS_CLASS };
 
-// 具体类 可以创建对象 添加引用计数
 #define CLASS(type)                 \
 typedef struct type type;           \
 type* type##_new(lw_oopc_file_line_params); \
 void type##_ctor(type* t);          \
-int type##_dtor(type* t);           \
+void type##_dtor(type* t);           \
 void type##_release(type* t);       \
 void type##_retain(type *t);        \
 struct type                         \
@@ -86,12 +75,10 @@ struct type                         \
 
 #define END_CLASS  };
 
-// 对类设置属性是函数的属性 并且设置引用计数初始是 1
-// 使用 FUNCTION_SETTING 来创建内部对象的函数属性
 #define CTOR(type)                                      \
-    type* type##_new(const char* file, int line) {      \
+    type* type##_new(const char* describe) {      \
     struct type *cthis;                                 \
-    cthis = (struct type*)lw_oopc_malloc(sizeof(struct type), #type, file, line);   \
+    cthis = (struct type*)lw_oopc_malloc(sizeof(struct type), #type, describe);   \
     cthis->referenceCount = 1;                          \
     if(!cthis)                                          \
     {                                                   \
@@ -104,7 +91,7 @@ struct type                         \
     {                                                   \
         if(--cthis->referenceCount == 0)                \
         {                                               \
-            type##_dtor(cthis);                          \
+            type##_dtor(cthis);                         \
             lw_oopc_free(cthis);                        \
         }                                               \
     }                                                   \
@@ -114,11 +101,8 @@ struct type                         \
     }                                                   \
 void type##_ctor(type* cthis) {
 
-// 由引用计数来判断是否释放 并且引用计数都减 1
 #define END_CTOR	} \
-    
- 
-// 使用 FUNCTION_RELEASE 来释放内部的对象
+
 #define DTOR(type)                  \
 void type##_dtor(type* cthis)       \
 {
@@ -132,13 +116,11 @@ void type##_ctor(type* cthis) {
 
 #define FUNCTION_SETTING(f1, f2)	cthis->f1 = f2;
 
-#define FUNCTION_RELEASE(type, f2)  type##_release(f2);
-
 #define IMPLEMENTS(type)	struct type type
 
 #define EXTENDS(type)		struct type type
 
-#define SUPER_PTR(cthis, father) ((father*)(&(cthis->##father)))
+#define SUPER_PTR(cthis, father) ((father*)(&(cthis->father)))
 
 #define SUPER_PTR_2(cthis, father, grandfather) \
 	SUPER_PTR(SUPER_PTR(cthis, father), grandfather)

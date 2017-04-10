@@ -29,30 +29,22 @@
 #include "string.h"
 #include "lw_oopc.h"
 
-//#define LW_OOPC_PRINT_DEBUG_INFO
+#define lw_oopc_dbginfo printf
 
-#ifdef LW_OOPC_PRINT_DEBUG_INFO
-    #define lw_oopc_dbginfo printf
-#else
-    #define lw_oopc_dbginfo
-#endif
-
-#define LW_OOPC_MAX_PATH   260
+// 描述对象的字符串只能有 20 个字符
+#define LW_OOPC_MAX_PATH   20
 
 typedef struct LW_OOPC_MemAllocUnit
 {
-    char file[LW_OOPC_MAX_PATH];   
-    int line;                       
+    char describe[LW_OOPC_MAX_PATH];
     void* addr;                   
-    size_t size;                    
+    int size;
     struct LW_OOPC_MemAllocUnit* next;     
 } LW_OOPC_MemAllocUnit;
 
-#ifdef LW_OOPC_SUPPORT_MEMORY_LEAK_DETECTOR
-
 static LW_OOPC_MemAllocUnit* lw_oopc_memAllocList = 0;
 
-void* lw_oopc_malloc(size_t size, const char* type, const char* file, int line)
+void* lw_oopc_malloc(int size, const char* type, const char* describe)
 {
     void* addr = malloc(size);
     if (addr != 0)
@@ -63,20 +55,14 @@ void* lw_oopc_malloc(size_t size, const char* type, const char* file, int line)
             lw_oopc_dbginfo("lw_oopc: error! malloc alloc unit failed.\n");
         }
 
-        if (strlen(file) >= LW_OOPC_MAX_PATH)
-        {
-            lw_oopc_dbginfo("lw_oopc: error! file name is more than %d character: %s\n", LW_OOPC_MAX_PATH, file);
-        }
+        strcpy(pMemAllocUnit->describe, describe);
 
-        strcpy(pMemAllocUnit->file, file);
-
-        pMemAllocUnit->line = line;
         pMemAllocUnit->addr = addr;
         pMemAllocUnit->size = size;
         pMemAllocUnit->next = lw_oopc_memAllocList;
         lw_oopc_memAllocList = pMemAllocUnit;
 
-        lw_oopc_dbginfo("lw_oopc: alloc memory in %p, size: %d, object type: %s, file: %s, line: %d\n", addr, size, type, file, line);
+        lw_oopc_dbginfo("lw_oopc: alloc memory in %p, size: %d, object type: %s, describe: %s\n", addr, size, type, describe);
     }
 
     return addr;
@@ -117,15 +103,16 @@ void lw_oopc_free(void* memblock)
 
 void lw_oopc_report()
 {
+    
     LW_OOPC_MemAllocUnit* currUnit = lw_oopc_memAllocList;
 
     if (currUnit != 0)
     {
-        lw_oopc_dbginfo(stderr, "lw_oopc: memory leak:\n");
+        lw_oopc_dbginfo("lw_oopc: memory leak:\n");
 
         while(currUnit != 0)
         {
-            lw_oopc_dbginfo(stderr, "memory leak in: %p, size: %d, file: %s, line: %d\n", currUnit->addr, currUnit->size, currUnit->file, currUnit->line);
+            lw_oopc_dbginfo("memory leak in: %p, size: %d, describe: %s\n", currUnit->addr, currUnit->size, currUnit->describe);
             currUnit = currUnit->next;
         }
     }
@@ -134,10 +121,3 @@ void lw_oopc_report()
         printf("lw_oopc: no memory leak.\n");
     }
 }
-#else
-
-void lw_oopc_report()
-{
-}
-
-#endif
