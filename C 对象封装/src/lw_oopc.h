@@ -1,28 +1,4 @@
-// Copyright (C) 2008,2009,2010 by Tom Kao & MISOO Team & Yonghua Jin. All rights reserved.
-// Released under the terms of the GNU Library or Lesser General Public License (LGPL).
-// Author: Tom Kao(÷–Œƒ√˚£∫∏ﬂª¿Ã√)£¨MISOOÕ≈∂”£¨Yonghua Jin(÷–Œƒ√˚£∫Ω”¿ª™)
-//
-// Redistribution and use in source and binary forms, with or without
-// modification, are permitted provided that the following conditions are
-// met:
-//    * Redistributions of source code must retain the above copyright
-//	notice, this list of conditions and the following disclaimer.
-//    * Redistributions in binary form must reproduce the above
-//	copyright notice, this list of conditions and the following disclaimer
-//	in the documentation and/or other materials provided with the
-//	distribution.
-//
-// THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
-// "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
-// LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
-// A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
-// OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
-// SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
-// LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
-// DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
-// THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
-// (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
-// OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+// 作者: 高焕堂 金永华 酸菜Amour
 
 #ifndef LW_OOPC_H_INCLUDED_
 #define LW_OOPC_H_INCLUDED_
@@ -45,16 +21,10 @@ void lw_oopc_report();
 
 #define lw_oopc_file_line_params const char* describe
 
-#define INTERFACE(type)             \
-typedef struct type type;           \
-void type##_ctor(type* t);          \
-void type##_dtor(type* t);           \
-struct type
-
 #define ABS_CLASS(type)             \
 typedef struct type type;           \
 void type##_ctor(type* t);          \
-void type##_dtor(type* t);           \
+void type##_dtor(type* t);          \
 void type##_release(type* t);       \
 void type##_retain(type* t);        \
 struct type                         \
@@ -62,7 +32,16 @@ struct type                         \
 
 #define END_ABS_CLASS };
 
-#define CLASS(type)                 \
+#define ABS_CTOR(type)              \
+void type##_ctor(type* cthis) {
+
+#define END_ABS_CTOR }
+
+// 根类
+ABS_CLASS(rootClass)
+END_ABS_CLASS
+
+#define CLASS(type, Father)                 \
 typedef struct type type;           \
 type* type##_new(lw_oopc_file_line_params); \
 void type##_ctor(type* t);          \
@@ -71,11 +50,13 @@ void type##_release(type* t);       \
 void type##_retain(type *t);        \
 struct type                         \
 {                                   \
-    int referenceCount;
+    int referenceCount;             \
+    void (*dealloc)(type* cthis);   \
+    struct Father father;
 
 #define END_CLASS  };
 
-#define CTOR(type)                                      \
+#define CTOR(type, Father)                                      \
     type* type##_new(const char* describe) {      \
     struct type *cthis;                                 \
     cthis = (struct type*)lw_oopc_malloc(sizeof(struct type), #type, describe);   \
@@ -91,7 +72,7 @@ struct type                         \
     {                                                   \
         if(--cthis->referenceCount == 0)                \
         {                                               \
-            type##_dtor(cthis);                         \
+            cthis->dealloc(cthis);                      \
             lw_oopc_free(cthis);                        \
         }                                               \
     }                                                   \
@@ -99,37 +80,22 @@ struct type                         \
     {                                                   \
         cthis->referenceCount++;                        \
     }                                                   \
-void type##_ctor(type* cthis) {
+void type##dealloc11111(type* cthis){}                  \
+void type##_ctor(type* cthis) {                         \
+    cthis->dealloc = type##dealloc11111;                \
+    Father##_ctor(&(cthis->father));
 
 #define END_CTOR	} \
 
-#define DTOR(type)                  \
-void type##_dtor(type* cthis)       \
-{
-
-#define END_DTOR }
-
-#define ABS_CTOR(type)              \
-void type##_ctor(type* cthis) {
-
-#define END_ABS_CTOR }
-
 #define FUNCTION_SETTING(f1, f2)	cthis->f1 = f2;
 
-#define IMPLEMENTS(type)	struct type type
-
-#define EXTENDS(type)		struct type type
-
-#define SUPER_PTR(cthis, father) ((father*)(&(cthis->father)))
+#define SUPER_PTR(cthis, Father) ((Father*)(&(cthis->father)))
 
 #define SUPER_PTR_2(cthis, father, grandfather) \
 	SUPER_PTR(SUPER_PTR(cthis, father), grandfather)
 
 #define SUPER_PTR_3(cthis, father, grandfather, greatgrandfather) \
 	SUPER_PTR(SUPER_PTR_2(cthis, father, grandfather), greatgrandfather)
-
-#define SUPER_CTOR(father) \
-	father##_ctor(SUPER_PTR(cthis, father));
 
 #define SUB_PTR(selfptr, self, child) \
 	((child*)((char*)selfptr - LW_OOPC_OFFSETOF(child, self)))
@@ -140,6 +106,6 @@ void type##_ctor(type* cthis) {
 #define SUB_PTR_3(selfptr, self, child, grandchild, greatgrandchild) \
 	SUB_PTR(SUB_PTR_2(selfptr, self, child, grandchild), grandchild, greatgrandchild)
 
-#define INHERIT_FROM(father, cthis, field)	cthis->father.field
+#define INHERIT_FROM(cthis, field)	cthis->father.field
 
 #endif
