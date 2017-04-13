@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+<TKStudioOptions Version="3.00" Author="YinHandong[Òüº®¶¬]">
+    <Projects OPTPES="96,96,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,64,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,64,0,0,0,0,0,0,0,0,0,0,0,">
+        <Project ProjectGUID="{A00BD609-56F4-4aa0-B802-CDD96E146E91}" Name="stm32test" ACTCFG="APP">
+            <TARGOPT Name="APP" OPTDF="0">
+                <OPTFFF VAL="&lt;..\main\cpp_test.cpp&gt; {2,3,-1,-1,100,100,808,350,0,281}" />
+                <OPTWA VAL="0,1,(maze)" />
+                <OPTWA VAL="1,1,(hArr)" />
+                <OPTWA VAL="2,1,(vArr)" />
+                <OPTWA VAL="3,1,(path)" />
+                <OPTWA VAL="4,1,(p)" />
+            </TARGOPT>
+        </Project>
+    </Projects>
+</TKStudioOptions>

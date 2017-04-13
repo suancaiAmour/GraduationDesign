@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\SYSTEM\usart\usart.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SYSTEM\sys\sys.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SYSTEM\delay\delay.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\USER\stm32f10x_it.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\CORE\core_cm3.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\HARDWARE\EXTI\exti.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\HARDWARE\WDG\wdg.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\HARDWARE\TIMER\timer.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\HARDWARE\PWM\pwm.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\HARDWARE\LED\led.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\HARDWARE\LCD\lcd.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\HARDWARE\KEY\key.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\USER\system_stm32f10x.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\STM32F10x_FWLib\src\stm32f10x_gpio.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\STM32F10x_FWLib\src\misc.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\STM32F10x_FWLib\src\stm32f10x_fsmc.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\STM32F10x_FWLib\src\stm32f10x_adc.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\STM32F10x_FWLib\src\stm32f10x_bkp.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\STM32F10x_FWLib\src\stm32f10x_i2c.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\STM32F10x_FWLib\src\stm32f10x_can.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\STM32F10x_FWLib\src\stm32f10x_iwdg.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\STM32F10x_FWLib\src\stm32f10x_cec.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\STM32F10x_FWLib\src\stm32f10x_pwr.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\STM32F10x_FWLib\src\stm32f10x_crc.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\STM32F10x_FWLib\src\stm32f10x_rcc.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\STM32F10x_FWLib\src\stm32f10x_dac.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\STM32F10x_FWLib\src\stm32f10x_rtc.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\STM32F10x_FWLib\src\stm32f10x_dbgmcu.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\STM32F10x_FWLib\src\stm32f10x_sdio.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\STM32F10x_FWLib\src\stm32f10x_dma.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\STM32F10x_FWLib\src\stm32f10x_spi.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\STM32F10x_FWLib\src\stm32f10x_exti.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\STM32F10x_FWLib\src\stm32f10x_tim.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\STM32F10x_FWLib\src\stm32f10x_flash.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\STM32F10x_FWLib\src\stm32f10x_usart.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\STM32F10x_FWLib\src\stm32f10x_wwdg.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\USER\main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\USER\Init.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

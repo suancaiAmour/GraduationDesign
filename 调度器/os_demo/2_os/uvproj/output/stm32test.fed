@@ -1,0 +1,144 @@
+;#<FEEDBACK># ARM Linker, 4.1 [Build 894]: Last Updated: Sun Dec 09 17:58:37 2012
+;VERSION 0.2
+;FILE allocator.o
+_ZN4nstd10HandleBase4InitEPNS_9AllocatorEPv <= USED 0
+_ZN4nstd10HandleBase4InitERKS0_ <= USED 0
+_ZN4nstd10HandleBase7ReleaseEv <= USED 0
+_ZN4nstd10HandleBase9GetObjNumEv <= USED 0
+_ZN4nstd10HandleBase9IsLastRefEv <= USED 0
+_ZN4nstd7PtrBase12GetAllocatorEv <= USED 0
+_ZN4nstd7PtrBase4InitEPv <= USED 0
+_ZN4nstd7PtrBase4InitEPvS1_ <= USED 0
+_ZN4nstd7PtrBase4InitERKNS_10HandleBaseE <= USED 0
+_ZN4nstd7PtrBase7ReleaseEv <= USED 0
+_ZN4nstd7PtrBase9GetObjNumEv <= USED 0
+_ZN4nstd7PtrBase9IsLastRefEv <= USED 0
+_ZN4nstd9Allocator10DebugPrintEv <= USED 0
+_ZN4nstd9Allocator10InsertNodeEPKNS_10HandleBaseEPS1_ <= USED 0
+_ZN4nstd9Allocator10InsertNodeEPNS_10HandleBaseE <= USED 0
+_ZN4nstd9Allocator11IsMergeAbleEPNS0_11BlockHeaderES2_ <= USED 0
+_ZN4nstd9Allocator12DecLockCountERKNS_10HandleBaseE <= USED 0
+_ZN4nstd9Allocator12DecLockCountERKNS_7PtrBaseE <= USED 0
+_ZN4nstd9Allocator12IncLockCountERKNS_10HandleBaseE <= USED 0
+_ZN4nstd9Allocator12IncLockCountERKNS_7PtrBaseE <= USED 0
+_ZN4nstd9Allocator13RemainLastRefERKNS_10HandleBaseE <= USED 0
+_ZN4nstd9Allocator13RemainLastRefERKNS_7PtrBaseE <= USED 0
+_ZN4nstd9Allocator14AllocateMemoryEt <= USED 0
+_ZN4nstd9Allocator16DeleteHandleNodeEPNS_10HandleBaseE <= USED 0
+_ZN4nstd9Allocator17NewAvailableBlockEPNS0_11BlockHeaderE <= USED 0
+_ZN4nstd9Allocator20GetNextAdjacentBlockEPKNS0_11BlockHeaderE <= USED 0
+_ZN4nstd9Allocator22MergeAdjacentFollowingEPNS0_11BlockHeaderE <= USED 0
+_ZN4nstd9Allocator23UpdateBlocksHandleChainEPNS0_11BlockHeaderES2_ <= USED 0
+_ZN4nstd9Allocator33PointedByFollowingAllocatedBlocksEPKNS0_11BlockHeaderE <= USED 0
+_ZN4nstd9Allocator4InitEPvt <= USED 0
+_ZN4nstd9Allocator5MergeEPNS0_11BlockHeaderES2_S2_ <= USED 0
+_ZN4nstd9Allocator9ForceFreeEPv <= USED 0
+_ZNK4nstd10HandleBase12DecLockCountEv <= USED 0
+_ZNK4nstd10HandleBase12IncLockCountEv <= USED 0
+;FILE core_cm3.o
+__REV16 <= USED 0
+__REVSH <= USED 0
+__get_MSP <= USED 0
+__get_PSP <= USED 0
+__set_MSP <= USED 0
+__set_PSP <= USED 0
+;FILE cpp_test.o
+;FILE debug.o
+__aeabi_assert <= USED 0
+;FILE font.o
+_Z13GetSystemFontv <= USED 0
+_ZN8Font1608D0Ev <= USED 0
+_ZN8FontBaseD0Ev <= USED 0
+_ZN8FontBaseD2Ev <= USED 0
+;FILE ili93xx.o
+_ZN10LCD_Screen10DisplayOffEv <= USED 0
+_ZN10LCD_Screen10WritePixelEtt6RGB565 <= USED 0
+_ZN10LCD_Screen14Read_SetCursorEtt <= USED 0
+_ZN10LCD_Screen14Read_SetWindowEtttt <= USED 0
+_ZN10LCD_Screen15Write_SetCursorEtt <= USED 0
+_ZN10LCD_Screen15Write_SetWindowEtttt <= USED 0
+_ZN10LCD_Screen4InitEv <= USED 0
+_ZN10LCD_Screen7IO_InitEv <= USED 0
+_ZN10LCD_Screen9DisplayOnEv <= USED 0
+_ZN10LCD_Screen9ReadPixelEtt <= USED 0
+_ZN6periph8gpio_reg10GPIO_Class7SetModeEth <= USED 0
+;FILE iostream.o
+_ZN4nstd13TextOutStreamlsEPKv <= USED 0
+_ZN4nstd7OStreamIcE5FlushEv <= USED 0
+;FILE lcd_gui.o
+_ZN7LCD_GUI10DrawCircleEiii <= USED 0
+_ZN7LCD_GUI10SelectFontEPK8FontBase <= USED 0
+_ZN7LCD_GUI11ClearScreenEv <= USED 0
+_ZN7LCD_GUI8DrawCharEttc <= USED 0
+_ZN7LCD_GUI8DrawLineEiiii <= USED 0
+_ZN7LCD_GUI8DrawRectEPK4Rect <= USED 0
+_ZN7LCD_GUI8FillRectEtttt6RGB565 <= USED 0
+;FILE mmc_sd.o
+_ZN7SD_Card11GetResponseEPNS_2R2E <= USED 0
+_ZN7SD_Card11GetResponseEPNS_2R3E <= USED 0
+_ZN7SD_Card11GetResponseEPNS_2R7E <= USED 0
+_ZN7SD_Card11GetResponseEPNS_3R1bE <= USED 0
+_ZN7SD_Card11GetResponseEPh <= USED 0
+_ZN7SD_Card12CommandBeginEhjh <= USED 0
+_ZN7SD_Card15ReadMultiBlocksEjPhh <= USED 0
+_ZN7SD_Card15ReadSingleBlockEjPh <= USED 0
+_ZN7SD_Card16WriteMultiBlocksEjPKhh <= USED 0
+_ZN7SD_Card16WriteSingleBlockEjPKh <= USED 0
+_ZN7SD_Card17ReceiveDataBlocksEPhth <= USED 0
+_ZN7SD_Card4InitEv <= USED 0
+_ZN7SD_Card6GetCSDEPh <= USED 0
+_ZN7SD_Card6GetSCREPh <= USED 0
+_ZN7SD_Card7IO_InitEv <= USED 0
+_ZN7SD_Card9WaitReadyEv <= USED 0
+;FILE startup_stm32f10x_md.o
+;FILE stm32f10x__nvic.o
+;FILE stm32f10x__rcc.o
+_ZN6periph7rcc_reg9RCC_Class13GetClocksFreqEPNS_14RCC_ClocksFreqE <= USED 0
+_ZN6periph7rcc_reg9RCC_Class16SetAHB_PrescalerEh <= USED 0
+_ZN6periph7rcc_reg9RCC_Class17GetAPB1_PrescalerEv <= USED 0
+_ZN6periph7rcc_reg9RCC_Class17SetAPB1_PrescalerEh <= USED 0
+_ZN6periph7rcc_reg9RCC_Class17SetAPB2_PrescalerEh <= USED 0
+;FILE stm32f10x__spi.o
+_ZN6periph7spi_reg9SPI_Class6ConfigERKNS_10SPI_ConfigE <= USED 0
+;FILE stm32f10x__tim.o
+_ZN6periph9timer_reg10BasicTimer10BaseConfigERKNS_14TIM_BaseConfigE <= USED 0
+_ZN6periph9timer_reg13AdvancedTimer10BaseConfigERKNS_14TIM_BaseConfigE <= USED 0
+_ZN6periph9timer_reg13AdvancedTimer21CaptureCompare1ConfigEPKNS_23TIM_OutputCompareConfigE <= USED 0
+_ZN6periph9timer_reg13AdvancedTimer21CaptureCompare2ConfigEPKNS_23TIM_OutputCompareConfigE <= USED 0
+_ZN6periph9timer_reg13AdvancedTimer21CaptureCompare3ConfigEPKNS_23TIM_OutputCompareConfigE <= USED 0
+_ZN6periph9timer_reg13AdvancedTimer21CaptureCompare4ConfigEPKNS_23TIM_OutputCompareConfigE <= USED 0
+;FILE stm32f10x__usart.o
+_ZN6periph4endlERNS_9usart_reg12USART1_ClassE <= USED 0
+_ZN6periph9usart_reg12USART1_Class5WriteEPKc <= USED 0
+_ZN6periph9usart_reg12USART1_ClasslsEPFvRS1_E <= USED 0
+_ZN6periph9usart_reg12USART1_ClasslsEPKc <= USED 0
+;FILE stm32f10x_it.o
+;FILE sys.o
+_Z10delay_inith <= USED 0
+_Z8delay_usj <= USED 0
+;FILE usart.o
+fclose <= USED 0
+ferror <= USED 0
+fflush <= USED 0
+fgetc <= USED 0
+fopen <= USED 0
+fseek <= USED 0
+ftell <= USED 0
+getkey <= USED 0
+sendchar <= USED 0
+;FILE utilities.o
+_ZN4nstd10MemoryMoveEPhPKht <= USED 0
+_ZN4nstd10NumToASCIIEh <= USED 0
+_ZN4nstd10StringCopyEPhS0_ <= USED 0
+_ZN4nstd11CmpASCArrayEPKhS1_th <= USED 0
+_ZN4nstd11PutWordToLEEPht <= USED 0
+_ZN4nstd12PutDWordToLEEPhj <= USED 0
+_ZN4nstd12StringLengthEPKh <= USED 0
+_ZN4nstd13GetWordFromLEEPh <= USED 0
+_ZN4nstd13StringIsEqualEPhS0_ <= USED 0
+_ZN4nstd14GetDWordFromLEEPh <= USED 0
+_ZN4nstd4FindEPKhhh <= USED 0
+_ZN4nstd7ToUpperEPh <= USED 0
+_ZN4nstd8FindCharEhPKht <= USED 0
+_ZN4nstd9CmpLetterEhh <= USED 0
+_ZN4nstd9MemorySetEPhth <= USED 0

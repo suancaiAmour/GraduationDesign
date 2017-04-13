@@ -1,0 +1,259 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="sys">
+      <UniqueIdentifier>{c8eb91ec-0f24-4b95-8e2f-e3b03995d01e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cppfwlib">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="main">
+      <UniqueIdentifier>{6d9fe687-5407-477d-83df-3c819986af0d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MMC_SD">
+      <UniqueIdentifier>{61a95b03-9f96-4267-a844-3fee0501be3d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="stm32libinc">
+      <UniqueIdentifier>{57a4fcb3-5da5-4ee5-961e-039ac8320d90}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cmsis">
+      <UniqueIdentifier>{d37a047b-e6f9-44d7-96b9-45e85b9843e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nstd">
+      <UniqueIdentifier>{256d56bc-ab6a-48a8-805f-c55d922b9dc4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FAT">
+      <UniqueIdentifier>{c62bf5f3-a47a-4040-9c55-ed29f538282c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\cppfwlib\stm32f10x__AFIO.h">
+      <Filter>cppfwlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cppfwlib\stm32f10x__cpplib.h">
+      <Filter>cppfwlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cppfwlib\stm32f10x__EXTI.h">
+      <Filter>cppfwlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cppfwlib\stm32f10x__FLASH.h">
+      <Filter>cppfwlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cppfwlib\stm32f10x__GPIO.h">
+      <Filter>cppfwlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cppfwlib\stm32f10x__GPIO_CPin.h">
+      <Filter>cppfwlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cppfwlib\stm32f10x__IWDG.h">
+      <Filter>cppfwlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cppfwlib\stm32f10x__NVIC.h">
+      <Filter>cppfwlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cppfwlib\stm32f10x__RCC.h">
+      <Filter>cppfwlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cppfwlib\stm32f10x__SCB.h">
+      <Filter>cppfwlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cppfwlib\stm32f10x__Systick.h">
+      <Filter>cppfwlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cppfwlib\stm32f10x__TIM.h">
+      <Filter>cppfwlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cppfwlib\stm32f10x__USART.h">
+      <Filter>cppfwlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cppfwlib\stm32f10x__WWDG.h">
+      <Filter>cppfwlib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MMC_SD\MMC_SD.H">
+      <Filter>MMC_SD</Filter>
+    </ClInclude>
+    <ClInclude Include="..\MMC_SD\mmc_sd_old_functions.h">
+      <Filter>MMC_SD</Filter>
+    </ClInclude>
+    <ClInclude Include="..\stm32stdlib\STM32F10x_StdPeriph_Driver\inc\misc.h">
+      <Filter>stm32libinc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\stm32stdlib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h">
+      <Filter>stm32libinc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\stm32stdlib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_bkp.h">
+      <Filter>stm32libinc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\stm32stdlib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_can.h">
+      <Filter>stm32libinc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\stm32stdlib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_cec.h">
+      <Filter>stm32libinc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\stm32stdlib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_crc.h">
+      <Filter>stm32libinc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\stm32stdlib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dac.h">
+      <Filter>stm32libinc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\stm32stdlib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dbgmcu.h">
+      <Filter>stm32libinc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\stm32stdlib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h">
+      <Filter>stm32libinc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\stm32stdlib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_exti.h">
+      <Filter>stm32libinc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\stm32stdlib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h">
+      <Filter>stm32libinc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\stm32stdlib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_fsmc.h">
+      <Filter>stm32libinc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\stm32stdlib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h">
+      <Filter>stm32libinc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\stm32stdlib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_i2c.h">
+      <Filter>stm32libinc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\stm32stdlib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_iwdg.h">
+      <Filter>stm32libinc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\stm32stdlib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_pwr.h">
+      <Filter>stm32libinc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\stm32stdlib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h">
+      <Filter>stm32libinc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\stm32stdlib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rtc.h">
+      <Filter>stm32libinc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\stm32stdlib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_sdio.h">
+      <Filter>stm32libinc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\stm32stdlib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h">
+      <Filter>stm32libinc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\stm32stdlib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h">
+      <Filter>stm32libinc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\stm32stdlib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h">
+      <Filter>stm32libinc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\stm32stdlib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_wwdg.h">
+      <Filter>stm32libinc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\stm32stdlib\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h">
+      <Filter>cmsis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\stm32stdlib\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h">
+      <Filter>cmsis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\stm32stdlib\CMSIS\CM3\CoreSupport\core_cm3.h">
+      <Filter>cmsis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sys\stm32f10x_conf.h">
+      <Filter>sys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sys\stm32f10x_it.h">
+      <Filter>sys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sys\sys.h">
+      <Filter>sys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sys\USART.H">
+      <Filter>sys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\nstd\BitOperation.h">
+      <Filter>nstd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\nstd\debug.h">
+      <Filter>nstd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\nstd\define.h">
+      <Filter>nstd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\nstd\FIFO.h">
+      <Filter>nstd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\nstd\iostream.h">
+      <Filter>nstd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\nstd\nstd_assert.H">
+      <Filter>nstd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\nstd\nstd_static_assert.h">
+      <Filter>nstd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\nstd\nstd_type.h">
+      <Filter>nstd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\nstd\Stack.h">
+      <Filter>nstd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\nstd\utilities.h">
+      <Filter>nstd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FAT\FAT_FS.h">
+      <Filter>FAT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FAT\FAT_Struct.h">
+      <Filter>FAT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FAT\FileInfo.h">
+      <Filter>FAT</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\cppfwlib\stm32f10x__GPIO_CPin.cpp">
+      <Filter>cppfwlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cppfwlib\stm32f10x__NVIC.cpp">
+      <Filter>cppfwlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cppfwlib\stm32f10x__RCC.cpp">
+      <Filter>cppfwlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cppfwlib\stm32f10x__USART.cpp">
+      <Filter>cppfwlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main\cpp_Test.cpp">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MMC_SD\MMC_SD.cpp">
+      <Filter>MMC_SD</Filter>
+    </ClCompile>
+    <ClCompile Include="..\stm32stdlib\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.c">
+      <Filter>cmsis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\stm32stdlib\CMSIS\CM3\CoreSupport\core_cm3.c">
+      <Filter>cmsis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sys\stm32f10x_it.cpp">
+      <Filter>sys</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sys\SYS.cpp">
+      <Filter>sys</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sys\usart.cpp">
+      <Filter>sys</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nstd\Debug.cpp">
+      <Filter>nstd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nstd\IOStream.cpp">
+      <Filter>nstd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nstd\nstd_type.cpp">
+      <Filter>nstd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\nstd\utilities.cpp">
+      <Filter>nstd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FAT\FAT_FS.cpp">
+      <Filter>FAT</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

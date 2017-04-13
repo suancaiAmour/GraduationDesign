@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="default" />
+	<File name="..\SYSTEM\SYS.H" open="0" top="0" tabpos="0">
+		<Cursor position="148" topLine="0" />
+	</File>
+	<File name="..\cppfwlib\stm32f10x__AFIO.h" open="0" top="0" tabpos="0">
+		<Cursor position="0" topLine="39" />
+	</File>
+	<File name="..\cppfwlib\stm32f10x__GPIO.h" open="1" top="0" tabpos="3">
+		<Cursor position="7618" topLine="186" />
+	</File>
+	<File name="..\cppfwlib\stm32f10x__GPIO_CPin.h" open="0" top="0" tabpos="2">
+		<Cursor position="375" topLine="5" />
+	</File>
+	<File name="..\cppfwlib\stm32f10x__cpplib.h" open="1" top="0" tabpos="2">
+		<Cursor position="182" topLine="2" />
+	</File>
+	<File name="..\main\cpp_Test.cpp" open="1" top="1" tabpos="1">
+		<Cursor position="168" topLine="0" />
+	</File>
+	<File name="..\main\stm32f10x__spi.h" open="0" top="0" tabpos="3">
+		<Cursor position="2359" topLine="92" />
+	</File>
+	<File name="..\main\stm32f10x__tim.h" open="0" top="0" tabpos="4">
+		<Cursor position="14288" topLine="324" />
+	</File>
+	<File name="..\stm32stdlib\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\arm\startup_stm32f10x_md.s" open="0" top="0" tabpos="0">
+		<Cursor position="12098" topLine="141" />
+	</File>
+	<File name="..\stm32stdlib\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h" open="0" top="0" tabpos="0">
+		<Cursor position="0" topLine="21" />
+	</File>
+	<File name="..\stm32stdlib\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.c" open="0" top="0" tabpos="0">
+		<Cursor position="33586" topLine="954" />
+	</File>
+</CodeBlocks_layout_file>

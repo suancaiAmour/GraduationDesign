@@ -1,0 +1,1338 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html><head>
+<title>Static Call Graph - [.\output\stm32test.axf]</title></head>
+<body><HR>
+<H1>Static Call Graph for image .\output\stm32test.axf</H1><HR>
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 4.1 [Build 894]: Last Updated: Mon Dec 10 23:16:58 2012
+<BR><P>
+<H3>Maximum Stack Usage =        240 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
+Call chain for Maximum Stack Depth:</H3>
+__rt_lib_init_clock_1 &rArr; _clock_init &rArr; System::Init() &rArr; USART1_Init(unsigned, unsigned) &rArr; periph::rcc_reg::RCC_Class::ClockCmd(const void*, FunctionalState) &rArr; core::bit_band_ptr(volatile unsigned&, unsigned) &rArr; nstd_AssertFailed(char*, char*, int) &rArr; nstd::TextOutStream::operator &lang;&lang;(unsigned) &rArr; nstd::TextOutStream::operator &lang;&lang;(const char&)
+<P>
+<H3>
+Functions with no stack information
+</H3><UL>
+ <LI><a href="#[b9]">__user_initial_stackheap</a>
+</UL>
+</UL>
+<P>
+<H3>
+Mutually Recursive functions
+</H3> <LI><a href="#[23]">ADC1_2_IRQHandler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[23]">ADC1_2_IRQHandler</a><BR>
+</UL>
+<P>
+<H3>
+Function Pointers
+</H3><UL>
+ <LI><a href="#[23]">ADC1_2_IRQHandler</a> from startup_stm32f10x_md.o(.text) referenced from startup_stm32f10x_md.o(RESET)
+ <LI><a href="#[b]">BusFault_Handler</a> from sys.o(.text) referenced from startup_stm32f10x_md.o(RESET)
+ <LI><a href="#[26]">CAN1_RX1_IRQHandler</a> from startup_stm32f10x_md.o(.text) referenced from startup_stm32f10x_md.o(RESET)
+ <LI><a href="#[27]">CAN1_SCE_IRQHandler</a> from startup_stm32f10x_md.o(.text) referenced from startup_stm32f10x_md.o(RESET)
+ <LI><a href="#[1c]">DMA1_Channel1_IRQHandler</a> from startup_stm32f10x_md.o(.text) referenced from startup_stm32f10x_md.o(RESET)
+ <LI><a href="#[1d]">DMA1_Channel2_IRQHandler</a> from startup_stm32f10x_md.o(.text) referenced from startup_stm32f10x_md.o(RESET)
+ <LI><a href="#[1e]">DMA1_Channel3_IRQHandler</a> from startup_stm32f10x_md.o(.text) referenced from startup_stm32f10x_md.o(RESET)
+ <LI><a href="#[1f]">DMA1_Channel4_IRQHandler</a> from startup_stm32f10x_md.o(.text) referenced from startup_stm32f10x_md.o(RESET)
+ <LI><a href="#[20]">DMA1_Channel5_IRQHandler</a> from startup_stm32f10x_md.o(.text) referenced from startup_stm32f10x_md.o(RESET)
+ <LI><a href="#[21]">DMA1_Channel6_IRQHandler</a> from startup_stm32f10x_md.o(.text) referenced from startup_stm32f10x_md.o(RESET)
+ <LI><a href="#[22]">DMA1_Channel7_IRQHandler</a> from startup_stm32f10x_md.o(.text) referenced from startup_stm32f10x_md.o(RESET)
+ <LI><a href="#[e]">DebugMon_Handler</a> from stm32f10x_it.o(.text) referenced from startup_stm32f10x_md.o(RESET)
+ <LI><a href="#[17]">EXTI0_IRQHandler</a> from startup_stm32f10x_md.o(.text) referenced from startup_stm32f10x_md.o(RESET)
+ <LI><a href="#[39]">EXTI15_10_IRQHandler</a> from startup_stm32f10x_md.o(.text) referenced from startup_stm32f10x_md.o(RESET)
+ <LI><a href="#[18]">EXTI1_IRQHandler</a> from startup_stm32f10x_md.o(.text) referenced from startup_stm32f10x_md.o(RESET)
+ <LI><a href="#[19]">EXTI2_IRQHandler</a> from startup_stm32f10x_md.o(.text) referenced from startup_stm32f10x_md.o(RESET)
+ <LI><a href="#[1a]">EXTI3_IRQHandler</a> from startup_stm32f10x_md.o(.text) referenced from startup_stm32f10x_md.o(RESET)
+ <LI><a href="#[1b]">EXTI4_IRQHandler</a> from startup_stm32f10x_md.o(.text) referenced from startup_stm32f10x_md.o(RESET)
+ <LI><a href="#[28]">EXTI9_5_IRQHandler</a> from startup_stm32f10x_md.o(.text) referenced from startup_stm32f10x_md.o(RESET)
+ <LI><a href="#[15]">FLASH_IRQHandler</a> from startup_stm32f10x_md.o(.text) referenced from startup_stm32f10x_md.o(RESET)
+ <LI><a href="#[9]">HardFault_Handler</a> from sys.o(.text) referenced from startup_stm32f10x_md.o(RESET)
+ <LI><a href="#[31]">I2C1_ER_IRQHandler</a> from startup_stm32f10x_md.o(.text) referenced from startup_stm32f10x_md.o(RESET)
+ <LI><a href="#[30]">I2C1_EV_IRQHandler</a> from startup_stm32f10x_md.o(.text) referenced from startup_stm32f10x_md.o(RESET)
+ <LI><a href="#[33]">I2C2_ER_IRQHandler</a> from startup_stm32f10x_md.o(.text) referenced from startup_stm32f10x_md.o(RESET)
+ <LI><a href="#[32]">I2C2_EV_IRQHandler</a> from startup_stm32f10x_md.o(.text) referenced from startup_stm32f10x_md.o(RESET)
+ <LI><a href="#[a]">MemManage_Handler</a> from sys.o(.text) referenced from startup_stm32f10x_md.o(RESET)
+ <LI><a href="#[8]">NMI_Handler</a> from sys.o(.text) referenced from startup_stm32f10x_md.o(RESET)
+ <LI><a href="#[12]">PVD_IRQHandler</a> from startup_stm32f10x_md.o(.text) referenced from startup_stm32f10x_md.o(RESET)
+ <LI><a href="#[f]">PendSV_Handler</a> from stm32f10x_it.o(.text) referenced from startup_stm32f10x_md.o(RESET)
+ <LI><a href="#[16]">RCC_IRQHandler</a> from startup_stm32f10x_md.o(.text) referenced from startup_stm32f10x_md.o(RESET)
+ <LI><a href="#[3a]">RTCAlarm_IRQHandler</a> from startup_stm32f10x_md.o(.text) referenced from startup_stm32f10x_md.o(RESET)
+ <LI><a href="#[14]">RTC_IRQHandler</a> from startup_stm32f10x_md.o(.text) referenced from startup_stm32f10x_md.o(RESET)
+ <LI><a href="#[7]">Reset_Handler</a> from startup_stm32f10x_md.o(.text) referenced from startup_stm32f10x_md.o(RESET)
+ <LI><a href="#[34]">SPI1_IRQHandler</a> from startup_stm32f10x_md.o(.text) referenced from startup_stm32f10x_md.o(RESET)
+ <LI><a href="#[35]">SPI2_IRQHandler</a> from startup_stm32f10x_md.o(.text) referenced from startup_stm32f10x_md.o(RESET)
+ <LI><a href="#[d]">SVC_Handler</a> from stm32f10x_it.o(.text) referenced from startup_stm32f10x_md.o(RESET)
+ <LI><a href="#[10]">SysTick_Handler</a> from stm32f10x_it.o(.text) referenced from startup_stm32f10x_md.o(RESET)
+ <LI><a href="#[3d]">SystemInit</a> from sys.o(.text) referenced from startup_stm32f10x_md.o(.text)
+ <LI><a href="#[13]">TAMPER_IRQHandler</a> from startup_stm32f10x_md.o(.text) referenced from startup_stm32f10x_md.o(RESET)
+ <LI><a href="#[29]">TIM1_BRK_IRQHandler</a> from startup_stm32f10x_md.o(.text) referenced from startup_stm32f10x_md.o(RESET)
+ <LI><a href="#[2c]">TIM1_CC_IRQHandler</a> from startup_stm32f10x_md.o(.text) referenced from startup_stm32f10x_md.o(RESET)
+ <LI><a href="#[2b]">TIM1_TRG_COM_IRQHandler</a> from startup_stm32f10x_md.o(.text) referenced from startup_stm32f10x_md.o(RESET)
+ <LI><a href="#[2a]">TIM1_UP_IRQHandler</a> from cpp_test.o(.emb_text) referenced from startup_stm32f10x_md.o(RESET)
+ <LI><a href="#[2d]">TIM2_IRQHandler</a> from startup_stm32f10x_md.o(.text) referenced from startup_stm32f10x_md.o(RESET)
+ <LI><a href="#[2e]">TIM3_IRQHandler</a> from startup_stm32f10x_md.o(.text) referenced from startup_stm32f10x_md.o(RESET)
+ <LI><a href="#[2f]">TIM4_IRQHandler</a> from startup_stm32f10x_md.o(.text) referenced from startup_stm32f10x_md.o(RESET)
+ <LI><a href="#[36]">USART1_IRQHandler</a> from usart.o(.text) referenced from startup_stm32f10x_md.o(RESET)
+ <LI><a href="#[37]">USART2_IRQHandler</a> from startup_stm32f10x_md.o(.text) referenced from startup_stm32f10x_md.o(RESET)
+ <LI><a href="#[38]">USART3_IRQHandler</a> from startup_stm32f10x_md.o(.text) referenced from startup_stm32f10x_md.o(RESET)
+ <LI><a href="#[3b]">USBWakeUp_IRQHandler</a> from startup_stm32f10x_md.o(.text) referenced from startup_stm32f10x_md.o(RESET)
+ <LI><a href="#[24]">USB_HP_CAN1_TX_IRQHandler</a> from startup_stm32f10x_md.o(.text) referenced from startup_stm32f10x_md.o(RESET)
+ <LI><a href="#[25]">USB_LP_CAN1_RX0_IRQHandler</a> from startup_stm32f10x_md.o(.text) referenced from startup_stm32f10x_md.o(RESET)
+ <LI><a href="#[c]">UsageFault_Handler</a> from sys.o(.text) referenced from startup_stm32f10x_md.o(RESET)
+ <LI><a href="#[11]">WWDG_IRQHandler</a> from startup_stm32f10x_md.o(.text) referenced from startup_stm32f10x_md.o(RESET)
+ <LI><a href="#[65]">task(unsigned)</a> from cpp_test.o(.text) referenced 2 times from cpp_test.o(.text)
+ <LI><a href="#[45]">nstd::TextOutStream::SendChar(char)</a> from iostream.o(.text) referenced from iostream.o(.constdata__ZTVN4nstd13TextOutStreamE)
+ <LI><a href="#[3c]">nstd::endl(nstd::TextOutStream&)</a> from allocator.o(i._ZN4nstd4endlERNS_13TextOutStreamE) referenced 4 times from sys.o(.text)
+ <LI><a href="#[3f]">Font1608::~Font1608()</a> from font.o(i._ZN8Font1608D1Ev) referenced from font.o(.constdata__ZTV8Font1608)
+ <LI><a href="#[3f]">Font1608::~Font1608()</a> from font.o(i._ZN8Font1608D1Ev) referenced from font.o(.text)
+ <LI><a href="#[44]">FontBase::~FontBase__deallocating()</a> from font.o(.text) referenced from font.o(.constdata__ZTV8FontBase)
+ <LI><a href="#[43]">FontBase::~FontBase__sub_object()</a> from font.o(.text) referenced from font.o(.constdata__ZTV8FontBase)
+ <LI><a href="#[41]">Font1608::GetDotMetrix(unsigned) const</a> from font.o(.text) referenced from font.o(.constdata__ZTV8Font1608)
+ <LI><a href="#[40]">Font1608::GetSize(unsigned, Size*) const</a> from font.o(.text) referenced from font.o(.constdata__ZTV8Font1608)
+ <LI><a href="#[42]">__cxa_pure_virtual</a> from pure_virt.o(i.__cxa_pure_virtual) referenced 2 times from font.o(.constdata__ZTV8FontBase)
+ <LI><a href="#[42]">__cxa_pure_virtual</a> from pure_virt.o(i.__cxa_pure_virtual) referenced from iostream.o(.constdata__ZTVN4nstd7OStreamIcEE)
+ <LI><a href="#[4a]">__main</a> from __main.o(!!!main) referenced from startup_stm32f10x_md.o(.text)
+ <LI><a href="#[48]">__sti___11_lcd_gui_cpp</a> from lcd_gui.o(.text) referenced from lcd_gui.o(.init_array)
+ <LI><a href="#[47]">__sti___12_IOStream_cpp</a> from iostream.o(.text) referenced from iostream.o(.init_array)
+ <LI><a href="#[46]">__sti___12_cpp_Test_cpp</a> from cpp_test.o(.text) referenced from cpp_test.o(.init_array)
+ <LI><a href="#[49]">__sti___8_font_cpp</a> from font.o(.text) referenced from font.o(.init_array)
+</UL>
+<P>
+<H3>
+Global Symbols
+</H3>
+<P><STRONG><a name="[4a]"></a>__main</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, __main.o(!!!main))
+<BR><BR>[Calls]<UL><LI><a href="#[4d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry
+<LI><a href="#[4c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
+</UL>
+
+<P><STRONG><a name="[4c]"></a>__scatterload</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __scatter.o(!!!scatter))
+<BR><BR>[Called By]<UL><LI><a href="#[4a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__main
+</UL>
+
+<P><STRONG><a name="[4e]"></a>__scatterload_rt2</STRONG> (Thumb, 44 bytes, Stack size unknown bytes, __scatter.o(!!!scatter), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[4d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry
+</UL>
+
+<P><STRONG><a name="[bf]"></a>__scatterload_rt2_thumb_only</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __scatter.o(!!!scatter), UNUSED)
+
+<P><STRONG><a name="[c0]"></a>__scatterload_null</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __scatter.o(!!!scatter), UNUSED)
+
+<P><STRONG><a name="[4f]"></a>__scatterload_copy</STRONG> (Thumb, 26 bytes, Stack size unknown bytes, __scatter_copy.o(!!handler_copy), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[4f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload_copy
+</UL>
+<BR>[Called By]<UL><LI><a href="#[4f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload_copy
+</UL>
+
+<P><STRONG><a name="[c1]"></a>__scatterload_zeroinit</STRONG> (Thumb, 28 bytes, Stack size unknown bytes, __scatter_zi.o(!!handler_zi), UNUSED)
+
+<P><STRONG><a name="[50]"></a>__rt_lib_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit.o(.ARM.Collect$$libinit$$00000000))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8 + Unknown Stack Size
+<LI>Call Chain = __rt_lib_init &rArr; _fp_init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[51]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_li
+</UL>
+
+<P><STRONG><a name="[52]"></a>__rt_lib_init_heap_2</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000001))
+<BR><BR>[Stack]<UL><LI>Max Depth = 72 + Unknown Stack Size
+<LI>Call Chain = __rt_lib_init_heap_2 &rArr; _init_alloc &rArr; __rt_SIGRTMEM &rArr; __rt_SIGRTMEM_inner &rArr; __default_signal_display &rArr; _ttywrch &rArr; sendchar
+</UL>
+<BR>[Calls]<UL><LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_init_alloc
+</UL>
+
+<P><STRONG><a name="[c2]"></a>__rt_lib_init_atexit_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000017))
+
+<P><STRONG><a name="[54]"></a>__rt_lib_init_clock_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000001C))
+<BR><BR>[Stack]<UL><LI>Max Depth = 240 + Unknown Stack Size
+<LI>Call Chain = __rt_lib_init_clock_1 &rArr; _clock_init &rArr; System::Init() &rArr; USART1_Init(unsigned, unsigned) &rArr; periph::rcc_reg::RCC_Class::ClockCmd(const void*, FunctionalState) &rArr; core::bit_band_ptr(volatile unsigned&, unsigned) &rArr; nstd_AssertFailed(char*, char*, int) &rArr; nstd::TextOutStream::operator &lang;&lang;(unsigned) &rArr; nstd::TextOutStream::operator &lang;&lang;(const char&)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_clock_init
+</UL>
+
+<P><STRONG><a name="[c3]"></a>__rt_lib_init_fp_trap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000001B))
+
+<P><STRONG><a name="[c4]"></a>__rt_lib_init_heap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000006))
+
+<P><STRONG><a name="[c5]"></a>__rt_lib_init_lc_collate_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000000D))
+
+<P><STRONG><a name="[c6]"></a>__rt_lib_init_lc_ctype_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000000F))
+
+<P><STRONG><a name="[c7]"></a>__rt_lib_init_lc_monetary_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000011))
+
+<P><STRONG><a name="[c8]"></a>__rt_lib_init_lc_numeric_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000013))
+
+<P><STRONG><a name="[c9]"></a>__rt_lib_init_lc_time_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000015))
+
+<P><STRONG><a name="[ca]"></a>__rt_lib_init_rand_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000000A))
+
+<P><STRONG><a name="[cb]"></a>__rt_lib_init_signal_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000019))
+
+<P><STRONG><a name="[cc]"></a>__rt_lib_init_user_alloc_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000008))
+
+<P><STRONG><a name="[cd]"></a>__rt_lib_init_alloca_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000002A))
+
+<P><STRONG><a name="[ce]"></a>__rt_lib_init_argv_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000028))
+
+<P><STRONG><a name="[56]"></a>__rt_lib_init_cpp_2</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000002D))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16 + Unknown Stack Size
+<LI>Call Chain = __rt_lib_init_cpp_2 &rArr; __cpp_initialize__aeabi_
+</UL>
+<BR>[Calls]<UL><LI><a href="#[4b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__cpp_initialize__aeabi_
+</UL>
+
+<P><STRONG><a name="[cf]"></a>__rt_lib_init_exceptions_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000002C))
+
+<P><STRONG><a name="[d0]"></a>__rt_lib_init_getenv_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000001F))
+
+<P><STRONG><a name="[d1]"></a>__rt_lib_init_stdio_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000021))
+
+<P><STRONG><a name="[d2]"></a>__rt_lib_init_cpp_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000002E))
+
+<P><STRONG><a name="[d3]"></a>__rt_lib_init_return</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000002F))
+
+<P><STRONG><a name="[60]"></a>__rt_lib_shutdown</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown.o(.ARM.Collect$$libshutdown$$00000000))
+<BR><BR>[Called By]<UL><LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_exit_ls
+</UL>
+
+<P><STRONG><a name="[57]"></a>__rt_lib_shutdown_cpp_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000001))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40 + Unknown Stack Size
+<LI>Call Chain = __rt_lib_shutdown_cpp_1 &rArr; __cxa_finalize &rArr; free
+</UL>
+<BR>[Calls]<UL><LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__cxa_finalize
+</UL>
+
+<P><STRONG><a name="[d4]"></a>__rt_lib_shutdown_fp_trap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000006))
+
+<P><STRONG><a name="[d5]"></a>__rt_lib_shutdown_heap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$0000000E))
+
+<P><STRONG><a name="[d6]"></a>__rt_lib_shutdown_return</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$0000000F))
+
+<P><STRONG><a name="[d7]"></a>__rt_lib_shutdown_signal_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000009))
+
+<P><STRONG><a name="[d8]"></a>__rt_lib_shutdown_stdio_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000003))
+
+<P><STRONG><a name="[d9]"></a>__rt_lib_shutdown_user_alloc_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$0000000B))
+
+<P><STRONG><a name="[4d]"></a>__rt_entry</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtentry.o(.ARM.Collect$$rtentry$$00000000))
+<BR><BR>[Called By]<UL><LI><a href="#[4a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__main
+<LI><a href="#[4e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload_rt2
+</UL>
+
+<P><STRONG><a name="[da]"></a>__rt_entry_presh_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtentry2.o(.ARM.Collect$$rtentry$$00000002))
+
+<P><STRONG><a name="[59]"></a>__rt_entry_sh</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtentry4.o(.ARM.Collect$$rtentry$$00000004))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8 + Unknown Stack Size
+<LI>Call Chain = __rt_entry_sh &rArr; __user_setup_stackheap
+</UL>
+<BR>[Calls]<UL><LI><a href="#[5a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__user_setup_stackheap
+</UL>
+
+<P><STRONG><a name="[5b]"></a>__rt_entry_li</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtentry2.o(.ARM.Collect$$rtentry$$0000000A))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8 + Unknown Stack Size
+<LI>Call Chain = __rt_entry_li &rArr; __rt_lib_init &rArr; _fp_init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_lib_init
+</UL>
+
+<P><STRONG><a name="[db]"></a>__rt_entry_postsh_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtentry2.o(.ARM.Collect$$rtentry$$00000009))
+
+<P><STRONG><a name="[5c]"></a>__rt_entry_main</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtentry2.o(.ARM.Collect$$rtentry$$0000000D))
+<BR><BR>[Stack]<UL><LI>Max Depth = 136 + Unknown Stack Size
+<LI>Call Chain = __rt_entry_main &rArr; main &rArr; periph::rcc_reg::RCC_Class::ClockCmd(const void*, FunctionalState) &rArr; core::bit_band_ptr(volatile unsigned&, unsigned) &rArr; nstd_AssertFailed(char*, char*, int) &rArr; nstd::TextOutStream::operator &lang;&lang;(unsigned) &rArr; nstd::TextOutStream::operator &lang;&lang;(const char&)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;exit
+</UL>
+
+<P><STRONG><a name="[dc]"></a>__rt_entry_postli_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtentry2.o(.ARM.Collect$$rtentry$$0000000C))
+
+<P><STRONG><a name="[ba]"></a>__rt_exit</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtexit.o(.ARM.Collect$$rtexit$$00000000))
+<BR><BR>[Called By]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;exit
+</UL>
+
+<P><STRONG><a name="[5f]"></a>__rt_exit_ls</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtexit2.o(.ARM.Collect$$rtexit$$00000003))
+<BR><BR>[Calls]<UL><LI><a href="#[60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_lib_shutdown
+</UL>
+
+<P><STRONG><a name="[dd]"></a>__rt_exit_prels_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtexit2.o(.ARM.Collect$$rtexit$$00000002))
+
+<P><STRONG><a name="[61]"></a>__rt_exit_exit</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtexit2.o(.ARM.Collect$$rtexit$$00000004))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16 + Unknown Stack Size
+<LI>Call Chain = __rt_exit_exit &rArr; _sys_exit &rArr; abort &rArr; nstd::TextOutStream::operator &lang;&lang;(const char*)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_sys_exit
+</UL>
+
+<P><STRONG><a name="[2a]"></a>TIM1_UP_IRQHandler</STRONG> (Thumb, 34 bytes, Stack size 0 bytes, cpp_test.o(.emb_text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = TIM1_UP_IRQHandler &rArr; clear_int_flag
+</UL>
+<BR>[Calls]<UL><LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tick_and_switch
+<LI><a href="#[64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;clear_int_flag
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_md.o(RESET)
+</UL>
+<P><STRONG><a name="[66]"></a>delay(int)</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, cpp_test.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<LI><a href="#[65]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;task(unsigned)
+</UL>
+
+<P><STRONG><a name="[de]"></a>_maybe_terminate_alloc</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, maybetermalloc1.o(.emb_text), UNUSED)
+
+<P><STRONG><a name="[65]"></a>task(unsigned)</STRONG> (Thumb, 48 bytes, Stack size 4 bytes, cpp_test.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = task(unsigned)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay(int)
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> cpp_test.o(.text)
+</UL>
+<P><STRONG><a name="[63]"></a>tick_and_switch</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, cpp_test.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[2a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM1_UP_IRQHandler
+</UL>
+
+<P><STRONG><a name="[5d]"></a>main</STRONG> (Thumb, 244 bytes, Stack size 16 bytes, cpp_test.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 136<LI>Call Chain = main &rArr; periph::rcc_reg::RCC_Class::ClockCmd(const void*, FunctionalState) &rArr; core::bit_band_ptr(volatile unsigned&, unsigned) &rArr; nstd_AssertFailed(char*, char*, int) &rArr; nstd::TextOutStream::operator &lang;&lang;(unsigned) &rArr; nstd::TextOutStream::operator &lang;&lang;(const char&)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;periph::timer_reg::AdvancedTimer::BaseConfig(const periph::TIM_BaseConfig&)
+<LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;periph::rcc_reg::RCC_Class::ClockCmd(const void*, FunctionalState)
+<LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;core::NVIC_Class::Config(IRQn, FunctionalState, unsigned char, unsigned char)
+<LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;periph::gpio_reg::GPIO_Class::SetMode(unsigned short, unsigned char)
+<LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay(int)
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_main
+</UL>
+
+<P><STRONG><a name="[64]"></a>clear_int_flag</STRONG> (Thumb, 34 bytes, Stack size 8 bytes, cpp_test.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = clear_int_flag
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM1_UP_IRQHandler
+</UL>
+
+<P><STRONG><a name="[df]"></a>periph::timer_reg::BasicTimer::BaseConfig(const periph::TIM_BaseConfig&)</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, stm32f10x__tim.o(.text), UNUSED)
+
+<P><STRONG><a name="[69]"></a>periph::timer_reg::AdvancedTimer::BaseConfig(const periph::TIM_BaseConfig&)</STRONG> (Thumb, 94 bytes, Stack size 20 bytes, stm32f10x__tim.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = periph::timer_reg::AdvancedTimer::BaseConfig(const periph::TIM_BaseConfig&)
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[e0]"></a>periph::timer_reg::AdvancedTimer::CaptureCompare1Config(const periph::TIM_OutputCompareConfig*)</STRONG> (Thumb, 242 bytes, Stack size 24 bytes, stm32f10x__tim.o(.text), UNUSED)
+
+<P><STRONG><a name="[e1]"></a>periph::timer_reg::AdvancedTimer::CaptureCompare2Config(const periph::TIM_OutputCompareConfig*)</STRONG> (Thumb, 246 bytes, Stack size 24 bytes, stm32f10x__tim.o(.text), UNUSED)
+
+<P><STRONG><a name="[e2]"></a>periph::timer_reg::AdvancedTimer::CaptureCompare3Config(const periph::TIM_OutputCompareConfig*)</STRONG> (Thumb, 242 bytes, Stack size 24 bytes, stm32f10x__tim.o(.text), UNUSED)
+
+<P><STRONG><a name="[e3]"></a>periph::timer_reg::AdvancedTimer::CaptureCompare4Config(const periph::TIM_OutputCompareConfig*)</STRONG> (Thumb, 176 bytes, Stack size 24 bytes, stm32f10x__tim.o(.text), UNUSED)
+
+<P><STRONG><a name="[d]"></a>SVC_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f10x_it.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_md.o(RESET)
+</UL>
+<P><STRONG><a name="[e]"></a>DebugMon_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f10x_it.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_md.o(RESET)
+</UL>
+<P><STRONG><a name="[f]"></a>PendSV_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f10x_it.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_md.o(RESET)
+</UL>
+<P><STRONG><a name="[10]"></a>SysTick_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f10x_it.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_md.o(RESET)
+</UL>
+<P><STRONG><a name="[72]"></a>delay_init(unsigned char)</STRONG> (Thumb, 44 bytes, Stack size 0 bytes, sys.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;System::Init()
+</UL>
+
+<P><STRONG><a name="[82]"></a>delay_ms(unsigned short)</STRONG> (Thumb, 54 bytes, Stack size 0 bytes, sys.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Debug_Init()
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Screen::Init()
+</UL>
+
+<P><STRONG><a name="[bc]"></a>delay_us(unsigned)</STRONG> (Thumb, 54 bytes, Stack size 0 bytes, sys.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Screen::SlowWriteData(unsigned short)
+<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Screen::SlowReadData()
+</UL>
+
+<P><STRONG><a name="[3d]"></a>SystemInit</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, sys.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_md.o(.text)
+</UL>
+<P><STRONG><a name="[6c]"></a>System::Init()</STRONG> (Thumb, 286 bytes, Stack size 64 bytes, sys.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 232<LI>Call Chain = System::Init() &rArr; USART1_Init(unsigned, unsigned) &rArr; periph::rcc_reg::RCC_Class::ClockCmd(const void*, FunctionalState) &rArr; core::bit_band_ptr(volatile unsigned&, unsigned) &rArr; nstd_AssertFailed(char*, char*, int) &rArr; nstd::TextOutStream::operator &lang;&lang;(unsigned) &rArr; nstd::TextOutStream::operator &lang;&lang;(const char&)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;periph::rcc_reg::RCC_Class::DeInit()
+<LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;periph::rcc_reg::RCC_Class::Config(const periph::SysclkConfigStruct&)
+<LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nstd::IOStream_Init()
+<LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART1_Init(unsigned, unsigned)
+<LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Debug_Init()
+<LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;core::scb_reg::SCB_Class::SetPriorityGrouping(core::PriorityGroupingStyle)
+<LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_init(unsigned char)
+<LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nstd::TextOutStream::operator &lang;&lang;(const char*)
+<LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nstd::TextOutStream::operator &lang;&lang;(void(*)(nstd::TextOutStream&))
+<LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;periph::rcc_reg::RCC_Class::ClockCmd(const void*, FunctionalState)
+</UL>
+<BR>[Called By]<UL><LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_clock_init
+</UL>
+
+<P><STRONG><a name="[55]"></a>_clock_init</STRONG> (Thumb, 10 bytes, Stack size 8 bytes, sys.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 240<LI>Call Chain = _clock_init &rArr; System::Init() &rArr; USART1_Init(unsigned, unsigned) &rArr; periph::rcc_reg::RCC_Class::ClockCmd(const void*, FunctionalState) &rArr; core::bit_band_ptr(volatile unsigned&, unsigned) &rArr; nstd_AssertFailed(char*, char*, int) &rArr; nstd::TextOutStream::operator &lang;&lang;(unsigned) &rArr; nstd::TextOutStream::operator &lang;&lang;(const char&)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;System::Init()
+</UL>
+<BR>[Called By]<UL><LI><a href="#[54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_lib_init_clock_1
+</UL>
+
+<P><STRONG><a name="[8]"></a>NMI_Handler</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, sys.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = NMI_Handler &rArr; nstd::TextOutStream::operator &lang;&lang;(const char*)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nstd::TextOutStream::operator &lang;&lang;(const char*)
+<LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nstd::TextOutStream::operator &lang;&lang;(void(*)(nstd::TextOutStream&))
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_md.o(RESET)
+</UL>
+<P><STRONG><a name="[9]"></a>HardFault_Handler</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, sys.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = HardFault_Handler &rArr; nstd::TextOutStream::operator &lang;&lang;(const char*)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nstd::TextOutStream::operator &lang;&lang;(const char*)
+<LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nstd::TextOutStream::operator &lang;&lang;(void(*)(nstd::TextOutStream&))
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_md.o(RESET)
+</UL>
+<P><STRONG><a name="[a]"></a>MemManage_Handler</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, sys.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = MemManage_Handler &rArr; nstd::TextOutStream::operator &lang;&lang;(const char*)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nstd::TextOutStream::operator &lang;&lang;(const char*)
+<LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nstd::TextOutStream::operator &lang;&lang;(void(*)(nstd::TextOutStream&))
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_md.o(RESET)
+</UL>
+<P><STRONG><a name="[b]"></a>BusFault_Handler</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, sys.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = BusFault_Handler &rArr; nstd::TextOutStream::operator &lang;&lang;(const char*)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nstd::TextOutStream::operator &lang;&lang;(const char*)
+<LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nstd::TextOutStream::operator &lang;&lang;(void(*)(nstd::TextOutStream&))
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_md.o(RESET)
+</UL>
+<P><STRONG><a name="[c]"></a>UsageFault_Handler</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, sys.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = UsageFault_Handler &rArr; nstd::TextOutStream::operator &lang;&lang;(const char*)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nstd::TextOutStream::operator &lang;&lang;(const char*)
+<LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nstd::TextOutStream::operator &lang;&lang;(void(*)(nstd::TextOutStream&))
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_md.o(RESET)
+</UL>
+<P><STRONG><a name="[36]"></a>USART1_IRQHandler</STRONG> (Thumb, 90 bytes, Stack size 8 bytes, usart.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = USART1_IRQHandler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_md.o(RESET)
+</UL>
+<P><STRONG><a name="[70]"></a>USART1_Init(unsigned, unsigned)</STRONG> (Thumb, 248 bytes, Stack size 48 bytes, usart.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 168<LI>Call Chain = USART1_Init(unsigned, unsigned) &rArr; periph::rcc_reg::RCC_Class::ClockCmd(const void*, FunctionalState) &rArr; core::bit_band_ptr(volatile unsigned&, unsigned) &rArr; nstd_AssertFailed(char*, char*, int) &rArr; nstd::TextOutStream::operator &lang;&lang;(unsigned) &rArr; nstd::TextOutStream::operator &lang;&lang;(const char&)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;periph::usart_reg::USART1_Class::Config(periph::USART_BaseConfig&, unsigned)
+<LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;periph::rcc_reg::RCC_Class::ClockCmd(const void*, FunctionalState)
+<LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;core::NVIC_Class::Config(IRQn, FunctionalState, unsigned char, unsigned char)
+<LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;periph::gpio_reg::GPIO_Class::SetMode(unsigned short, unsigned char)
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;System::Init()
+</UL>
+
+<P><STRONG><a name="[7a]"></a>sendchar</STRONG> (Thumb, 106 bytes, Stack size 8 bytes, usart.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = sendchar
+</UL>
+<BR>[Called By]<UL><LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_ttywrch
+<LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fgetc
+<LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fputc
+</UL>
+
+<P><STRONG><a name="[7c]"></a>getkey</STRONG> (Thumb, 78 bytes, Stack size 8 bytes, usart.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fgetc
+</UL>
+
+<P><STRONG><a name="[77]"></a>fopen</STRONG> (Thumb, 18 bytes, Stack size 16 bytes, usart.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;periph::usart_reg::USART1_Class::operator &lang;&lang;(const char*)
+</UL>
+
+<P><STRONG><a name="[79]"></a>fputc</STRONG> (Thumb, 14 bytes, Stack size 12 bytes, usart.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = fputc &rArr; sendchar
+</UL>
+<BR>[Calls]<UL><LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sendchar
+</UL>
+<BR>[Called By]<UL><LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;putchar
+</UL>
+
+<P><STRONG><a name="[7b]"></a>fgetc</STRONG> (Thumb, 16 bytes, Stack size 12 bytes, usart.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;getkey
+<LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sendchar
+</UL>
+
+<P><STRONG><a name="[e4]"></a>ferror</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, usart.o(.text), UNUSED)
+
+<P><STRONG><a name="[7d]"></a>ftell</STRONG> (Thumb, 16 bytes, Stack size 8 bytes, usart.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;periph::usart_reg::USART1_Class::operator &lang;&lang;(const char*)
+</UL>
+
+<P><STRONG><a name="[7e]"></a>fclose</STRONG> (Thumb, 16 bytes, Stack size 8 bytes, usart.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;periph::usart_reg::USART1_Class::operator &lang;&lang;(const char*)
+</UL>
+
+<P><STRONG><a name="[7f]"></a>fseek</STRONG> (Thumb, 20 bytes, Stack size 16 bytes, usart.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;periph::usart_reg::USART1_Class::operator &lang;&lang;(const char*)
+</UL>
+
+<P><STRONG><a name="[e5]"></a>fflush</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, usart.o(.text), UNUSED)
+
+<P><STRONG><a name="[62]"></a>_sys_exit</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, usart.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = _sys_exit &rArr; abort &rArr; nstd::TextOutStream::operator &lang;&lang;(const char*)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;abort
+</UL>
+<BR>[Called By]<UL><LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_exit_exit
+<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__sig_exit
+</UL>
+
+<P><STRONG><a name="[81]"></a>_ttywrch</STRONG> (Thumb, 12 bytes, Stack size 8 bytes, usart.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = _ttywrch &rArr; sendchar
+</UL>
+<BR>[Calls]<UL><LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sendchar
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__default_signal_display
+</UL>
+
+<P><STRONG><a name="[73]"></a>Debug_Init()</STRONG> (Thumb, 142 bytes, Stack size 32 bytes, debug.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = Debug_Init() &rArr; periph::gpio_reg::GPIO_Class::SetMode(unsigned short, unsigned char)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_ms(unsigned short)
+<LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;periph::gpio_reg::GPIO_Class::SetMode(unsigned short, unsigned char)
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;System::Init()
+</UL>
+
+<P><STRONG><a name="[80]"></a>abort</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, debug.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = abort &rArr; nstd::TextOutStream::operator &lang;&lang;(const char*)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nstd::TextOutStream::operator &lang;&lang;(const char*)
+<LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nstd::TextOutStream::operator &lang;&lang;(void(*)(nstd::TextOutStream&))
+</UL>
+<BR>[Called By]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
+<LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_sys_exit
+<LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nstd_AssertFailed(char*, char*, int)
+</UL>
+
+<P><STRONG><a name="[83]"></a>__aeabi_assert</STRONG> (Thumb, 76 bytes, Stack size 16 bytes, debug.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;abort
+<LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nstd::TextOutStream::operator &lang;&lang;(unsigned)
+<LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nstd::TextOutStream::operator &lang;&lang;(const char*)
+<LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nstd::TextOutStream::operator &lang;&lang;(void(*)(nstd::TextOutStream&))
+</UL>
+
+<P><STRONG><a name="[85]"></a>nstd_AssertFailed(char*, char*, int)</STRONG> (Thumb, 76 bytes, Stack size 16 bytes, debug.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = nstd_AssertFailed(char*, char*, int) &rArr; nstd::TextOutStream::operator &lang;&lang;(unsigned) &rArr; nstd::TextOutStream::operator &lang;&lang;(const char&)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;abort
+<LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nstd::TextOutStream::operator &lang;&lang;(unsigned)
+<LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nstd::TextOutStream::operator &lang;&lang;(const char*)
+<LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nstd::TextOutStream::operator &lang;&lang;(void(*)(nstd::TextOutStream&))
+</UL>
+<BR>[Called By]<UL><LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;periph::rcc_reg::RCC_Class::ClockCmd(const void*, FunctionalState)
+<LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;core::bit_band_ptr(volatile unsigned&, unsigned)
+<LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;periph::rcc_reg::RCC_Class::GetClocksFreq(periph::RCC_ClocksFreq*)
+<LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_GUI::SelectFont(const FontBase*)
+</UL>
+
+<P><STRONG><a name="[45]"></a>nstd::TextOutStream::SendChar(char)</STRONG> (Thumb, 14 bytes, Stack size 16 bytes, iostream.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = nstd::TextOutStream::SendChar(char) &rArr; putchar &rArr; fputc &rArr; sendchar
+</UL>
+<BR>[Calls]<UL><LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;putchar
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> iostream.o(.constdata__ZTVN4nstd13TextOutStreamE)
+</UL>
+<P><STRONG><a name="[75]"></a>nstd::TextOutStream::operator &lang;&lang;(const char*)</STRONG> (Thumb, 30 bytes, Stack size 16 bytes, iostream.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = nstd::TextOutStream::operator &lang;&lang;(const char*)
+</UL>
+<BR>[Called By]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
+<LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;abort
+<LI><a href="#[c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UsageFault_Handler
+<LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BusFault_Handler
+<LI><a href="#[a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MemManage_Handler
+<LI><a href="#[9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HardFault_Handler
+<LI><a href="#[8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NMI_Handler
+<LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;System::Init()
+<LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nstd_AssertFailed(char*, char*, int)
+<LI><a href="#[3c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nstd::endl(nstd::TextOutStream&)
+<LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_GUI::DrawChar(unsigned short, unsigned short, char)
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Screen::Init()
+</UL>
+
+<P><STRONG><a name="[87]"></a>nstd::TextOutStream::operator &lang;&lang;(const void*)</STRONG> (Thumb, 50 bytes, Stack size 24 bytes, iostream.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nstd::NumToASCII(unsigned char)
+<LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nstd::TextOutStream::operator &lang;&lang;(const char&)
+</UL>
+
+<P><STRONG><a name="[84]"></a>nstd::TextOutStream::operator &lang;&lang;(unsigned)</STRONG> (Thumb, 120 bytes, Stack size 40 bytes, iostream.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = nstd::TextOutStream::operator &lang;&lang;(unsigned) &rArr; nstd::TextOutStream::operator &lang;&lang;(const char&)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nstd::TextOutStream::operator &lang;&lang;(const char&)
+</UL>
+<BR>[Called By]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
+<LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nstd_AssertFailed(char*, char*, int)
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Screen::Init()
+</UL>
+
+<P><STRONG><a name="[71]"></a>nstd::IOStream_Init()</STRONG> (Thumb, 78 bytes, Stack size 16 bytes, iostream.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = nstd::IOStream_Init()
+</UL>
+<BR>[Calls]<UL><LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nstd::TextOutStream::TextOutStream()
+<LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nstd::TextInStream::TextInStream()
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;System::Init()
+</UL>
+
+<P><STRONG><a name="[e6]"></a>nstd::GetDWordFromLE(unsigned char*)</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, utilities.o(.text), UNUSED)
+
+<P><STRONG><a name="[e7]"></a>nstd::PutDWordToLE(unsigned char*, unsigned)</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, utilities.o(.text), UNUSED)
+
+<P><STRONG><a name="[e8]"></a>nstd::GetWordFromLE(unsigned char*)</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, utilities.o(.text), UNUSED)
+
+<P><STRONG><a name="[e9]"></a>nstd::PutWordToLE(unsigned char*, unsigned short)</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, utilities.o(.text), UNUSED)
+
+<P><STRONG><a name="[ea]"></a>nstd::StringIsEqual(unsigned char*, unsigned char*)</STRONG> (Thumb, 36 bytes, Stack size 8 bytes, utilities.o(.text), UNUSED)
+
+<P><STRONG><a name="[eb]"></a>nstd::StringCopy(unsigned char*, unsigned char*)</STRONG> (Thumb, 22 bytes, Stack size 0 bytes, utilities.o(.text), UNUSED)
+
+<P><STRONG><a name="[ec]"></a>nstd::ToUpper(unsigned char*)</STRONG> (Thumb, 32 bytes, Stack size 0 bytes, utilities.o(.text), UNUSED)
+
+<P><STRONG><a name="[ed]"></a>nstd::FindChar(unsigned char, const unsigned char*, unsigned short)</STRONG> (Thumb, 22 bytes, Stack size 0 bytes, utilities.o(.text), UNUSED)
+
+<P><STRONG><a name="[8d]"></a>nstd::CmpLetter(unsigned char, unsigned char)</STRONG> (Thumb, 36 bytes, Stack size 0 bytes, utilities.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nstd::CmpASCArray(const unsigned char*, const unsigned char*, unsigned short, unsigned char)
+</UL>
+
+<P><STRONG><a name="[8c]"></a>nstd::CmpASCArray(const unsigned char*, const unsigned char*, unsigned short, unsigned char)</STRONG> (Thumb, 86 bytes, Stack size 16 bytes, utilities.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nstd::CmpLetter(unsigned char, unsigned char)
+</UL>
+
+<P><STRONG><a name="[ee]"></a>nstd::StringLength(const unsigned char*)</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, utilities.o(.text), UNUSED)
+
+<P><STRONG><a name="[ef]"></a>nstd::Find(const unsigned char*, unsigned char, unsigned char)</STRONG> (Thumb, 34 bytes, Stack size 8 bytes, utilities.o(.text), UNUSED)
+
+<P><STRONG><a name="[f0]"></a>nstd::MemorySet(unsigned char*, unsigned short, unsigned char)</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, utilities.o(.text), UNUSED)
+
+<P><STRONG><a name="[f1]"></a>nstd::MemoryMove(unsigned char*, const unsigned char*, unsigned short)</STRONG> (Thumb, 24 bytes, Stack size 8 bytes, utilities.o(.text), UNUSED)
+
+<P><STRONG><a name="[88]"></a>nstd::NumToASCII(unsigned char)</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, utilities.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nstd::TextOutStream::operator &lang;&lang;(const void*)
+</UL>
+
+<P><STRONG><a name="[7]"></a>Reset_Handler</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, startup_stm32f10x_md.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_md.o(RESET)
+</UL>
+<P><STRONG><a name="[23]"></a>ADC1_2_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_md.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[23]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC1_2_IRQHandler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[23]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC1_2_IRQHandler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_md.o(RESET)
+</UL>
+<P><STRONG><a name="[26]"></a>CAN1_RX1_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_md.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_md.o(RESET)
+</UL>
+<P><STRONG><a name="[27]"></a>CAN1_SCE_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_md.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_md.o(RESET)
+</UL>
+<P><STRONG><a name="[1c]"></a>DMA1_Channel1_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_md.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_md.o(RESET)
+</UL>
+<P><STRONG><a name="[1d]"></a>DMA1_Channel2_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_md.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_md.o(RESET)
+</UL>
+<P><STRONG><a name="[1e]"></a>DMA1_Channel3_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_md.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_md.o(RESET)
+</UL>
+<P><STRONG><a name="[1f]"></a>DMA1_Channel4_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_md.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_md.o(RESET)
+</UL>
+<P><STRONG><a name="[20]"></a>DMA1_Channel5_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_md.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_md.o(RESET)
+</UL>
+<P><STRONG><a name="[21]"></a>DMA1_Channel6_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_md.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_md.o(RESET)
+</UL>
+<P><STRONG><a name="[22]"></a>DMA1_Channel7_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_md.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_md.o(RESET)
+</UL>
+<P><STRONG><a name="[17]"></a>EXTI0_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_md.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_md.o(RESET)
+</UL>
+<P><STRONG><a name="[39]"></a>EXTI15_10_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_md.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_md.o(RESET)
+</UL>
+<P><STRONG><a name="[18]"></a>EXTI1_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_md.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_md.o(RESET)
+</UL>
+<P><STRONG><a name="[19]"></a>EXTI2_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_md.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_md.o(RESET)
+</UL>
+<P><STRONG><a name="[1a]"></a>EXTI3_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_md.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_md.o(RESET)
+</UL>
+<P><STRONG><a name="[1b]"></a>EXTI4_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_md.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_md.o(RESET)
+</UL>
+<P><STRONG><a name="[28]"></a>EXTI9_5_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_md.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_md.o(RESET)
+</UL>
+<P><STRONG><a name="[15]"></a>FLASH_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_md.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_md.o(RESET)
+</UL>
+<P><STRONG><a name="[31]"></a>I2C1_ER_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_md.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_md.o(RESET)
+</UL>
+<P><STRONG><a name="[30]"></a>I2C1_EV_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_md.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_md.o(RESET)
+</UL>
+<P><STRONG><a name="[33]"></a>I2C2_ER_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_md.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_md.o(RESET)
+</UL>
+<P><STRONG><a name="[32]"></a>I2C2_EV_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_md.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_md.o(RESET)
+</UL>
+<P><STRONG><a name="[12]"></a>PVD_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_md.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_md.o(RESET)
+</UL>
+<P><STRONG><a name="[16]"></a>RCC_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_md.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_md.o(RESET)
+</UL>
+<P><STRONG><a name="[3a]"></a>RTCAlarm_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_md.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_md.o(RESET)
+</UL>
+<P><STRONG><a name="[14]"></a>RTC_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_md.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_md.o(RESET)
+</UL>
+<P><STRONG><a name="[34]"></a>SPI1_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_md.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_md.o(RESET)
+</UL>
+<P><STRONG><a name="[35]"></a>SPI2_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_md.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_md.o(RESET)
+</UL>
+<P><STRONG><a name="[13]"></a>TAMPER_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_md.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_md.o(RESET)
+</UL>
+<P><STRONG><a name="[29]"></a>TIM1_BRK_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_md.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_md.o(RESET)
+</UL>
+<P><STRONG><a name="[2c]"></a>TIM1_CC_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_md.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_md.o(RESET)
+</UL>
+<P><STRONG><a name="[2b]"></a>TIM1_TRG_COM_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_md.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_md.o(RESET)
+</UL>
+<P><STRONG><a name="[2d]"></a>TIM2_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_md.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_md.o(RESET)
+</UL>
+<P><STRONG><a name="[2e]"></a>TIM3_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_md.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_md.o(RESET)
+</UL>
+<P><STRONG><a name="[2f]"></a>TIM4_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_md.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_md.o(RESET)
+</UL>
+<P><STRONG><a name="[37]"></a>USART2_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_md.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_md.o(RESET)
+</UL>
+<P><STRONG><a name="[38]"></a>USART3_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_md.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_md.o(RESET)
+</UL>
+<P><STRONG><a name="[3b]"></a>USBWakeUp_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_md.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_md.o(RESET)
+</UL>
+<P><STRONG><a name="[24]"></a>USB_HP_CAN1_TX_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_md.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_md.o(RESET)
+</UL>
+<P><STRONG><a name="[25]"></a>USB_LP_CAN1_RX0_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_md.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_md.o(RESET)
+</UL>
+<P><STRONG><a name="[11]"></a>WWDG_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_md.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_md.o(RESET)
+</UL>
+<P><STRONG><a name="[b9]"></a>__user_initial_stackheap</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, startup_stm32f10x_md.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[5a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__user_setup_stackheap
+</UL>
+
+<P><STRONG><a name="[6a]"></a>core::NVIC_Class::Config(IRQn, FunctionalState, unsigned char, unsigned char)</STRONG> (Thumb, 230 bytes, Stack size 28 bytes, stm32f10x__nvic.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 28<LI>Call Chain = core::NVIC_Class::Config(IRQn, FunctionalState, unsigned char, unsigned char)
+</UL>
+<BR>[Called By]<UL><LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART1_Init(unsigned, unsigned)
+<LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[8e]"></a>periph::rcc_reg::RCC_Class::SetAPB1_Prescaler(unsigned char)</STRONG> (Thumb, 62 bytes, Stack size 20 bytes, stm32f10x__rcc.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = periph::rcc_reg::RCC_Class::SetAPB1_Prescaler(unsigned char)
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;periph::rcc_reg::RCC_Class::DeInit()
+<LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;periph::rcc_reg::RCC_Class::Config(const periph::SysclkConfigStruct&)
+</UL>
+
+<P><STRONG><a name="[93]"></a>periph::rcc_reg::RCC_Class::GetAPB1_Prescaler()</STRONG> (Thumb, 66 bytes, Stack size 16 bytes, stm32f10x__rcc.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = periph::rcc_reg::RCC_Class::GetAPB1_Prescaler()
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;periph::rcc_reg::RCC_Class::Config(const periph::SysclkConfigStruct&)
+</UL>
+
+<P><STRONG><a name="[8f]"></a>periph::rcc_reg::RCC_Class::SetAPB2_Prescaler(unsigned char)</STRONG> (Thumb, 62 bytes, Stack size 20 bytes, stm32f10x__rcc.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = periph::rcc_reg::RCC_Class::SetAPB2_Prescaler(unsigned char)
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;periph::rcc_reg::RCC_Class::DeInit()
+</UL>
+
+<P><STRONG><a name="[90]"></a>periph::rcc_reg::RCC_Class::SetAHB_Prescaler(unsigned char)</STRONG> (Thumb, 60 bytes, Stack size 20 bytes, stm32f10x__rcc.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = periph::rcc_reg::RCC_Class::SetAHB_Prescaler(unsigned char)
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;periph::rcc_reg::RCC_Class::DeInit()
+</UL>
+
+<P><STRONG><a name="[6d]"></a>periph::rcc_reg::RCC_Class::DeInit()</STRONG> (Thumb, 430 bytes, Stack size 24 bytes, stm32f10x__rcc.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 44<LI>Call Chain = periph::rcc_reg::RCC_Class::DeInit() &rArr; periph::rcc_reg::RCC_Class::SetAHB_Prescaler(unsigned char)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;periph::rcc_reg::RCC_Class::GetSysclkSwitchStatus()
+<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;periph::rcc_reg::RCC_Class::SetAHB_Prescaler(unsigned char)
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;periph::rcc_reg::RCC_Class::SetAPB2_Prescaler(unsigned char)
+<LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;periph::rcc_reg::RCC_Class::SetAPB1_Prescaler(unsigned char)
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;System::Init()
+</UL>
+
+<P><STRONG><a name="[6e]"></a>periph::rcc_reg::RCC_Class::Config(const periph::SysclkConfigStruct&)</STRONG> (Thumb, 1298 bytes, Stack size 72 bytes, stm32f10x__rcc.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 92<LI>Call Chain = periph::rcc_reg::RCC_Class::Config(const periph::SysclkConfigStruct&) &rArr; periph::flash_reg::FLASH_Class::SetLatency(unsigned)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;periph::flash_reg::FLASH_Class::SetLatency(unsigned)
+<LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;periph::rcc_reg::RCC_Class::GetSysclkSwitchStatus()
+<LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;periph::rcc_reg::RCC_Class::GetAPB1_Prescaler()
+<LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;periph::rcc_reg::RCC_Class::SetAPB1_Prescaler(unsigned char)
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;System::Init()
+</UL>
+
+<P><STRONG><a name="[67]"></a>periph::rcc_reg::RCC_Class::ClockCmd(const void*, FunctionalState)</STRONG> (Thumb, 366 bytes, Stack size 24 bytes, stm32f10x__rcc.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 120<LI>Call Chain = periph::rcc_reg::RCC_Class::ClockCmd(const void*, FunctionalState) &rArr; core::bit_band_ptr(volatile unsigned&, unsigned) &rArr; nstd_AssertFailed(char*, char*, int) &rArr; nstd::TextOutStream::operator &lang;&lang;(unsigned) &rArr; nstd::TextOutStream::operator &lang;&lang;(const char&)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nstd_AssertFailed(char*, char*, int)
+<LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;core::bit_band_ptr(volatile unsigned&, unsigned)
+</UL>
+<BR>[Called By]<UL><LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART1_Init(unsigned, unsigned)
+<LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;System::Init()
+<LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Screen::IO_Init()
+</UL>
+
+<P><STRONG><a name="[95]"></a>periph::rcc_reg::RCC_Class::GetClocksFreq(periph::RCC_ClocksFreq*)</STRONG> (Thumb, 330 bytes, Stack size 40 bytes, stm32f10x__rcc.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nstd_AssertFailed(char*, char*, int)
+</UL>
+
+<P><STRONG><a name="[96]"></a>periph::usart_reg::USART1_Class::Write(const char*)</STRONG> (Thumb, 60 bytes, Stack size 12 bytes, stm32f10x__usart.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;periph::usart_reg::USART1_Class::operator &lang;&lang;(const char*)
+</UL>
+
+<P><STRONG><a name="[f2]"></a>periph::usart_reg::USART1_Class::operator &lang;&lang;(void(*)(periph::usart_reg::USART1_Class&))</STRONG> (Thumb, 14 bytes, Stack size 16 bytes, stm32f10x__usart.o(.text), UNUSED)
+
+<P><STRONG><a name="[78]"></a>periph::usart_reg::USART1_Class::operator &lang;&lang;(const char*)</STRONG> (Thumb, 18 bytes, Stack size 12 bytes, stm32f10x__usart.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;periph::usart_reg::USART1_Class::Write(const char*)
+</UL>
+<BR>[Called By]<UL><LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fseek
+<LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fclose
+<LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ftell
+<LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fopen
+<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;periph::endl(periph::usart_reg::USART1_Class&)
+</UL>
+
+<P><STRONG><a name="[76]"></a>periph::usart_reg::USART1_Class::Config(periph::USART_BaseConfig&, unsigned)</STRONG> (Thumb, 126 bytes, Stack size 20 bytes, stm32f10x__usart.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = periph::usart_reg::USART1_Class::Config(periph::USART_BaseConfig&, unsigned)
+</UL>
+<BR>[Called By]<UL><LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART1_Init(unsigned, unsigned)
+</UL>
+
+<P><STRONG><a name="[97]"></a>periph::endl(periph::usart_reg::USART1_Class&)</STRONG> (Thumb, 14 bytes, Stack size 8 bytes, stm32f10x__usart.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;periph::usart_reg::USART1_Class::operator &lang;&lang;(const char*)
+</UL>
+
+<P><STRONG><a name="[98]"></a>LCD_Screen::IO_Init()</STRONG> (Thumb, 338 bytes, Stack size 24 bytes, ili93xx.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;periph::rcc_reg::RCC_Class::ClockCmd(const void*, FunctionalState)
+<LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;periph::gpio_reg::GPIO_Class::SetMode(unsigned short, unsigned char)
+</UL>
+<BR>[Called By]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Screen::Init()
+</UL>
+
+<P><STRONG><a name="[99]"></a>LCD_Screen::Init()</STRONG> (Thumb, 1094 bytes, Stack size 24 bytes, ili93xx.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_ms(unsigned short)
+<LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nstd::TextOutStream::operator &lang;&lang;(unsigned)
+<LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nstd::TextOutStream::operator &lang;&lang;(const char*)
+<LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Screen::SlowWriteData(unsigned short)
+<LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Screen::SlowWriteReg(unsigned short, unsigned short)
+<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Screen::SlowReadData()
+<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Screen::IO_Init()
+</UL>
+
+<P><STRONG><a name="[f3]"></a>LCD_Screen::DisplayOn()</STRONG> (Thumb, 98 bytes, Stack size 8 bytes, ili93xx.o(.text), UNUSED)
+
+<P><STRONG><a name="[f4]"></a>LCD_Screen::DisplayOff()</STRONG> (Thumb, 96 bytes, Stack size 8 bytes, ili93xx.o(.text), UNUSED)
+
+<P><STRONG><a name="[9e]"></a>LCD_Screen::Write_SetCursor(unsigned short, unsigned short)</STRONG> (Thumb, 230 bytes, Stack size 12 bytes, ili93xx.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Screen::WritePixel(unsigned short, unsigned short, RGB565)
+<LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Screen::Write_SetWindow(unsigned short, unsigned short, unsigned short, unsigned short)
+</UL>
+
+<P><STRONG><a name="[9d]"></a>LCD_Screen::Write_SetWindow(unsigned short, unsigned short, unsigned short, unsigned short)</STRONG> (Thumb, 368 bytes, Stack size 24 bytes, ili93xx.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Screen::Write_SetCursor(unsigned short, unsigned short)
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_GUI::DrawChar(unsigned short, unsigned short, char)
+<LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_GUI::FillRect(unsigned short, unsigned short, unsigned short, unsigned short, RGB565)
+</UL>
+
+<P><STRONG><a name="[9f]"></a>LCD_Screen::WritePixel(unsigned short, unsigned short, RGB565)</STRONG> (Thumb, 50 bytes, Stack size 32 bytes, ili93xx.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Screen::Write_SetCursor(unsigned short, unsigned short)
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_GUI::DrawChar(unsigned short, unsigned short, char)
+<LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_GUI::DrawCircle(int, int, int)
+<LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_GUI::DrawLine(int, int, int, int)
+</UL>
+
+<P><STRONG><a name="[a1]"></a>LCD_Screen::Read_SetCursor(unsigned short, unsigned short)</STRONG> (Thumb, 388 bytes, Stack size 20 bytes, ili93xx.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Screen::ReadPixel(unsigned short, unsigned short)
+<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Screen::Read_SetWindow(unsigned short, unsigned short, unsigned short, unsigned short)
+</UL>
+
+<P><STRONG><a name="[a0]"></a>LCD_Screen::Read_SetWindow(unsigned short, unsigned short, unsigned short, unsigned short)</STRONG> (Thumb, 368 bytes, Stack size 24 bytes, ili93xx.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Screen::Read_SetCursor(unsigned short, unsigned short)
+</UL>
+
+<P><STRONG><a name="[a2]"></a>LCD_Screen::ReadPixel(unsigned short, unsigned short)</STRONG> (Thumb, 402 bytes, Stack size 40 bytes, ili93xx.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Screen::Read_SetCursor(unsigned short, unsigned short)
+</UL>
+
+<P><STRONG><a name="[a3]"></a>LCD_GUI::FillRect(unsigned short, unsigned short, unsigned short, unsigned short, RGB565)</STRONG> (Thumb, 112 bytes, Stack size 32 bytes, lcd_gui.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Screen::Write_SetWindow(unsigned short, unsigned short, unsigned short, unsigned short)
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_GUI::ClearScreen()
+</UL>
+
+<P><STRONG><a name="[a4]"></a>LCD_GUI::ClearScreen()</STRONG> (Thumb, 30 bytes, Stack size 16 bytes, lcd_gui.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_GUI::FillRect(unsigned short, unsigned short, unsigned short, unsigned short, RGB565)
+</UL>
+
+<P><STRONG><a name="[a5]"></a>LCD_GUI::DrawLine(int, int, int, int)</STRONG> (Thumb, 242 bytes, Stack size 64 bytes, lcd_gui.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Screen::WritePixel(unsigned short, unsigned short, RGB565)
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_GUI::DrawRect(const Rect*)
+</UL>
+
+<P><STRONG><a name="[a6]"></a>LCD_GUI::DrawRect(const Rect*)</STRONG> (Thumb, 70 bytes, Stack size 16 bytes, lcd_gui.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_GUI::DrawLine(int, int, int, int)
+</UL>
+
+<P><STRONG><a name="[a7]"></a>LCD_GUI::DrawCircle(int, int, int)</STRONG> (Thumb, 192 bytes, Stack size 40 bytes, lcd_gui.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Screen::WritePixel(unsigned short, unsigned short, RGB565)
+</UL>
+
+<P><STRONG><a name="[a8]"></a>LCD_GUI::SelectFont(const FontBase*)</STRONG> (Thumb, 22 bytes, Stack size 16 bytes, lcd_gui.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nstd_AssertFailed(char*, char*, int)
+</UL>
+
+<P><STRONG><a name="[a9]"></a>LCD_GUI::DrawChar(unsigned short, unsigned short, char)</STRONG> (Thumb, 710 bytes, Stack size 72 bytes, lcd_gui.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nstd::TextOutStream::operator &lang;&lang;(const char*)
+<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Screen::WritePixel(unsigned short, unsigned short, RGB565)
+<LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Screen::Write_SetWindow(unsigned short, unsigned short, unsigned short, unsigned short)
+</UL>
+
+<P><STRONG><a name="[f5]"></a>GetSystemFont()</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, font.o(.text), UNUSED)
+
+<P><STRONG><a name="[f6]"></a>FontBase::~FontBase()</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, font.o(.text), UNUSED)
+
+<P><STRONG><a name="[43]"></a>FontBase::~FontBase__sub_object()</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, font.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[3f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Font1608::~Font1608()
+<LI><a href="#[44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FontBase::~FontBase__deallocating()
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> font.o(.constdata__ZTV8FontBase)
+</UL>
+<P><STRONG><a name="[44]"></a>FontBase::~FontBase__deallocating()</STRONG> (Thumb, 18 bytes, Stack size 16 bytes, font.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = FontBase::~FontBase__deallocating() &rArr; operator delete (void*) &rArr; free
+</UL>
+<BR>[Calls]<UL><LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;operator delete (void*)
+<LI><a href="#[43]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FontBase::~FontBase__sub_object()
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> font.o(.constdata__ZTV8FontBase)
+</UL>
+<P><STRONG><a name="[40]"></a>Font1608::GetSize(unsigned, Size*) const</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, font.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> font.o(.constdata__ZTV8Font1608)
+</UL>
+<P><STRONG><a name="[41]"></a>Font1608::GetDotMetrix(unsigned) const</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, font.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> font.o(.constdata__ZTV8Font1608)
+</UL>
+<P><STRONG><a name="[f7]"></a>__I$use$semihosting</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, use_no_semi.o(.text), UNUSED)
+
+<P><STRONG><a name="[f8]"></a>__use_no_semihosting_swi</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, use_no_semi.o(.text), UNUSED)
+
+<P><STRONG><a name="[86]"></a>putchar</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, putchar.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = putchar &rArr; fputc &rArr; sendchar
+</UL>
+<BR>[Calls]<UL><LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fputc
+</UL>
+<BR>[Called By]<UL><LI><a href="#[45]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nstd::TextOutStream::SendChar(char)
+</UL>
+
+<P><STRONG><a name="[f9]"></a>__use_two_region_memory</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, heapauxi.o(.text), UNUSED)
+
+<P><STRONG><a name="[4]"></a>__rt_heap_escrow</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, heapauxi.o(.text), UNUSED)
+
+<P><STRONG><a name="[3]"></a>__rt_heap_expand</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, heapauxi.o(.text), UNUSED)
+
+<P><STRONG><a name="[4b]"></a>__cpp_initialize__aeabi_</STRONG> (Thumb, 26 bytes, Stack size 16 bytes, init_aeabi.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = __cpp_initialize__aeabi_
+</UL>
+<BR>[Called By]<UL><LI><a href="#[56]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_lib_init_cpp_2
+</UL>
+
+<P><STRONG><a name="[bd]"></a>__rt_ddtor_pointer_addr</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, rt_ddtor_pointer_addr_intlibspace.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_atexit
+<LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__cxa_finalize
+</UL>
+
+<P><STRONG><a name="[ac]"></a>malloc</STRONG> (Thumb, 94 bytes, Stack size 16 bytes, h1_alloc.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = malloc &rArr; __Heap_Full &rArr; __Heap_ProvideMemory &rArr; free
+</UL>
+<BR>[Calls]<UL><LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__Heap_Full
+<LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_heap_descriptor
+</UL>
+<BR>[Called By]<UL><LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_atexit
+</UL>
+
+<P><STRONG><a name="[af]"></a>free</STRONG> (Thumb, 78 bytes, Stack size 16 bytes, h1_free.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = free
+</UL>
+<BR>[Calls]<UL><LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_heap_descriptor
+</UL>
+<BR>[Called By]<UL><LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;operator delete (void*)
+<LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__Heap_ProvideMemory
+<LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__cxa_finalize
+</UL>
+
+<P><STRONG><a name="[b0]"></a>__rt_SIGPVFN</STRONG> (Thumb, 14 bytes, Stack size 8 bytes, defsig_pvfn_outer.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = __rt_SIGPVFN &rArr; __rt_SIGPVFN_inner &rArr; __default_signal_display &rArr; _ttywrch &rArr; sendchar
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_SIGPVFN_inner
+<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__sig_exit
+</UL>
+<BR>[Called By]<UL><LI><a href="#[42]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__cxa_pure_virtual
+</UL>
+
+<P><STRONG><a name="[fa]"></a>__user_libspace</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, libspace.o(.text), UNUSED)
+
+<P><STRONG><a name="[b8]"></a>__user_perproc_libspace</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, libspace.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[5a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__user_setup_stackheap
+</UL>
+
+<P><STRONG><a name="[fb]"></a>__user_perthread_libspace</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, libspace.o(.text), UNUSED)
+
+<P><STRONG><a name="[ad]"></a>__rt_heap_descriptor</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, rt_heap_descriptor_intlibspace.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;free
+<LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;malloc
+<LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_init_alloc
+</UL>
+
+<P><STRONG><a name="[fc]"></a>__use_no_heap</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, hguard.o(.text), UNUSED)
+
+<P><STRONG><a name="[fd]"></a>__heap$guard</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, hguard.o(.text), UNUSED)
+
+<P><STRONG><a name="[1]"></a>_terminate_user_alloc</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, init_alloc.o(.text), UNUSED)
+
+<P><STRONG><a name="[0]"></a>_init_user_alloc</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, init_alloc.o(.text), UNUSED)
+
+<P><STRONG><a name="[ae]"></a>__Heap_Full</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, init_alloc.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = __Heap_Full &rArr; __Heap_ProvideMemory &rArr; free
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__Heap_ProvideMemory
+</UL>
+<BR>[Called By]<UL><LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;malloc
+</UL>
+
+<P><STRONG><a name="[b4]"></a>__Heap_Broken</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, init_alloc.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_SIGRTMEM
+</UL>
+
+<P><STRONG><a name="[53]"></a>_init_alloc</STRONG> (Thumb, 94 bytes, Stack size 24 bytes, init_alloc.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = _init_alloc &rArr; __rt_SIGRTMEM &rArr; __rt_SIGRTMEM_inner &rArr; __default_signal_display &rArr; _ttywrch &rArr; sendchar
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_SIGRTMEM
+<LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__Heap_ProvideMemory
+<LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__Heap_Initialize
+<LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_heap_descriptor
+</UL>
+<BR>[Called By]<UL><LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_lib_init_heap_2
+</UL>
+
+<P><STRONG><a name="[b6]"></a>__Heap_Initialize</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, h1_init.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_init_alloc
+</UL>
+
+<P><STRONG><a name="[5]"></a>__Heap_DescSize</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, h1_init.o(.text), UNUSED)
+
+<P><STRONG><a name="[b2]"></a>__sig_exit</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, defsig_exit.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = __sig_exit &rArr; _sys_exit &rArr; abort &rArr; nstd::TextOutStream::operator &lang;&lang;(const char*)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_sys_exit
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_SIGPVFN
+<LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_SIGRTMEM
+</UL>
+
+<P><STRONG><a name="[b1]"></a>__rt_SIGPVFN_inner</STRONG> (Thumb, 14 bytes, Stack size 8 bytes, defsig_pvfn_inner.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = __rt_SIGPVFN_inner &rArr; __default_signal_display &rArr; _ttywrch &rArr; sendchar
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__default_signal_display
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_SIGPVFN
+</UL>
+
+<P><STRONG><a name="[5a]"></a>__user_setup_stackheap</STRONG> (Thumb, 74 bytes, Stack size 8 bytes, sys_stackheap_outer.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8 + Unknown Stack Size
+<LI>Call Chain = __user_setup_stackheap
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__user_initial_stackheap
+<LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__user_perproc_libspace
+</UL>
+<BR>[Called By]<UL><LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_sh
+</UL>
+
+<P><STRONG><a name="[b3]"></a>__Heap_ProvideMemory</STRONG> (Thumb, 52 bytes, Stack size 0 bytes, h1_extend.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = __Heap_ProvideMemory &rArr; free
+</UL>
+<BR>[Calls]<UL><LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;free
+</UL>
+<BR>[Called By]<UL><LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_init_alloc
+<LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__Heap_Full
+</UL>
+
+<P><STRONG><a name="[5e]"></a>exit</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, exit.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_exit
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_main
+</UL>
+
+<P><STRONG><a name="[b7]"></a>__default_signal_display</STRONG> (Thumb, 50 bytes, Stack size 16 bytes, defsig_general.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = __default_signal_display &rArr; _ttywrch &rArr; sendchar
+</UL>
+<BR>[Calls]<UL><LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_ttywrch
+</UL>
+<BR>[Called By]<UL><LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_SIGRTMEM_inner
+<LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_SIGPVFN_inner
+</UL>
+
+<P><STRONG><a name="[b5]"></a>__rt_SIGRTMEM</STRONG> (Thumb, 14 bytes, Stack size 8 bytes, defsig_rtmem_outer.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = __rt_SIGRTMEM &rArr; __rt_SIGRTMEM_inner &rArr; __default_signal_display &rArr; _ttywrch &rArr; sendchar
+</UL>
+<BR>[Calls]<UL><LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_SIGRTMEM_inner
+<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__sig_exit
+</UL>
+<BR>[Called By]<UL><LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_init_alloc
+<LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__Heap_Broken
+</UL>
+
+<P><STRONG><a name="[bb]"></a>__rt_SIGRTMEM_inner</STRONG> (Thumb, 22 bytes, Stack size 8 bytes, defsig_rtmem_inner.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = __rt_SIGRTMEM_inner &rArr; __default_signal_display &rArr; _ttywrch &rArr; sendchar
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__default_signal_display
+</UL>
+<BR>[Called By]<UL><LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_SIGRTMEM
+</UL>
+
+<P><STRONG><a name="[be]"></a>__rt_fp_status_addr</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, rt_fp_status_addr_intlibspace.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[51]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_init
+</UL>
+
+<P><STRONG><a name="[9c]"></a>LCD_Screen::SlowReadData()</STRONG> (Thumb, 148 bytes, Stack size 16 bytes, ili93xx.o(i._ZN10LCD_Screen12SlowReadDataEv), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_us(unsigned)
+</UL>
+<BR>[Called By]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Screen::Init()
+</UL>
+
+<P><STRONG><a name="[9a]"></a>LCD_Screen::SlowWriteReg(unsigned short, unsigned short)</STRONG> (Thumb, 56 bytes, Stack size 16 bytes, ili93xx.o(i._ZN10LCD_Screen12SlowWriteRegEtt), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Screen::SlowWriteData(unsigned short)
+</UL>
+<BR>[Called By]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Screen::Init()
+</UL>
+
+<P><STRONG><a name="[9b]"></a>LCD_Screen::SlowWriteData(unsigned short)</STRONG> (Thumb, 52 bytes, Stack size 8 bytes, ili93xx.o(i._ZN10LCD_Screen13SlowWriteDataEt), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_us(unsigned)
+</UL>
+<BR>[Called By]<UL><LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Screen::SlowWriteReg(unsigned short, unsigned short)
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Screen::Init()
+</UL>
+
+<P><STRONG><a name="[6b]"></a>task_init_stack_frame::task_init_stack_frame(unsigned, unsigned, void(*)())</STRONG> (Thumb, 16 bytes, Stack size 8 bytes, cpp_test.o(i._ZN21task_init_stack_frameC1EjjPFvvE))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = task_init_stack_frame::task_init_stack_frame(unsigned, unsigned, void(*)())
+</UL>
+<BR>[Called By]<UL><LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__sti___12_cpp_Test_cpp
+</UL>
+
+<P><STRONG><a name="[fe]"></a>task_init_stack_frame::task_init_stack_frame__sub_object(unsigned, unsigned, void(*)())</STRONG> (Thumb, 0 bytes, Stack size 8 bytes, cpp_test.o(i._ZN21task_init_stack_frameC1EjjPFvvE), UNUSED)
+
+<P><STRONG><a name="[94]"></a>core::bit_band_ptr(volatile unsigned&, unsigned)</STRONG> (Thumb, 74 bytes, Stack size 24 bytes, stm32f10x__rcc.o(i._ZN4core12bit_band_ptrERVjj))
+<BR><BR>[Stack]<UL><LI>Max Depth = 96<LI>Call Chain = core::bit_band_ptr(volatile unsigned&, unsigned) &rArr; nstd_AssertFailed(char*, char*, int) &rArr; nstd::TextOutStream::operator &lang;&lang;(unsigned) &rArr; nstd::TextOutStream::operator &lang;&lang;(const char&)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nstd_AssertFailed(char*, char*, int)
+</UL>
+<BR>[Called By]<UL><LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;periph::rcc_reg::RCC_Class::ClockCmd(const void*, FunctionalState)
+</UL>
+
+<P><STRONG><a name="[6f]"></a>core::scb_reg::SCB_Class::SetPriorityGrouping(core::PriorityGroupingStyle)</STRONG> (Thumb, 80 bytes, Stack size 24 bytes, sys.o(i._ZN4core7scb_reg9SCB_Class19SetPriorityGroupingENS_21PriorityGroupingStyleE))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = core::scb_reg::SCB_Class::SetPriorityGrouping(core::PriorityGroupingStyle)
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;System::Init()
+</UL>
+
+<P><STRONG><a name="[8b]"></a>nstd::TextInStream::TextInStream()</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, iostream.o(i._ZN4nstd12TextInStreamC1Ev))
+<BR><BR>[Called By]<UL><LI><a href="#[47]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__sti___12_IOStream_cpp
+<LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nstd::IOStream_Init()
+</UL>
+
+<P><STRONG><a name="[ff]"></a>nstd::TextInStream::TextInStream__sub_object()</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, iostream.o(i._ZN4nstd12TextInStreamC1Ev), UNUSED)
+
+<P><STRONG><a name="[8a]"></a>nstd::TextOutStream::TextOutStream()</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, iostream.o(i._ZN4nstd13TextOutStreamC1Ev))
+<BR><BR>[Called By]<UL><LI><a href="#[47]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__sti___12_IOStream_cpp
+<LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nstd::IOStream_Init()
+</UL>
+
+<P><STRONG><a name="[100]"></a>nstd::TextOutStream::TextOutStream__sub_object()</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, iostream.o(i._ZN4nstd13TextOutStreamC1Ev), UNUSED)
+
+<P><STRONG><a name="[74]"></a>nstd::TextOutStream::operator &lang;&lang;(void(*)(nstd::TextOutStream&))</STRONG> (Thumb, 14 bytes, Stack size 16 bytes, allocator.o(i._ZN4nstd13TextOutStreamlsEPFvRS0_E))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = nstd::TextOutStream::operator &lang;&lang;(void(*)(nstd::TextOutStream&))
+</UL>
+<BR>[Called By]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_assert
+<LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;abort
+<LI><a href="#[c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UsageFault_Handler
+<LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BusFault_Handler
+<LI><a href="#[a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MemManage_Handler
+<LI><a href="#[9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HardFault_Handler
+<LI><a href="#[8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NMI_Handler
+<LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;System::Init()
+<LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nstd_AssertFailed(char*, char*, int)
+</UL>
+
+<P><STRONG><a name="[89]"></a>nstd::TextOutStream::operator &lang;&lang;(const char&)</STRONG> (Thumb, 20 bytes, Stack size 16 bytes, iostream.o(i._ZN4nstd13TextOutStreamlsERKc))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = nstd::TextOutStream::operator &lang;&lang;(const char&)
+</UL>
+<BR>[Called By]<UL><LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nstd::TextOutStream::operator &lang;&lang;(unsigned)
+<LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nstd::TextOutStream::operator &lang;&lang;(const void*)
+</UL>
+
+<P><STRONG><a name="[3c]"></a>nstd::endl(nstd::TextOutStream&)</STRONG> (Thumb, 14 bytes, Stack size 8 bytes, allocator.o(i._ZN4nstd4endlERNS_13TextOutStreamE))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = nstd::endl(nstd::TextOutStream&) &rArr; nstd::TextOutStream::operator &lang;&lang;(const char*)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nstd::TextOutStream::operator &lang;&lang;(const char*)
+</UL>
+<BR>[Address Reference Count : 4]<UL><LI> sys.o(.text)
+<LI> debug.o(.text)
+<LI> ili93xx.o(.text)
+<LI> lcd_gui.o(.text)
+</UL>
+<P><STRONG><a name="[91]"></a>periph::rcc_reg::RCC_Class::GetSysclkSwitchStatus()</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, stm32f10x__rcc.o(i._ZN6periph7rcc_reg9RCC_Class21GetSysclkSwitchStatusEv))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = periph::rcc_reg::RCC_Class::GetSysclkSwitchStatus()
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;periph::rcc_reg::RCC_Class::DeInit()
+<LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;periph::rcc_reg::RCC_Class::Config(const periph::SysclkConfigStruct&)
+</UL>
+
+<P><STRONG><a name="[68]"></a>periph::gpio_reg::GPIO_Class::SetMode(unsigned short, unsigned char)</STRONG> (Thumb, 98 bytes, Stack size 16 bytes, cpp_test.o(i._ZN6periph8gpio_reg10GPIO_Class7SetModeEth))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = periph::gpio_reg::GPIO_Class::SetMode(unsigned short, unsigned char)
+</UL>
+<BR>[Called By]<UL><LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART1_Init(unsigned, unsigned)
+<LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Debug_Init()
+<LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Screen::IO_Init()
+</UL>
+
+<P><STRONG><a name="[92]"></a>periph::flash_reg::FLASH_Class::SetLatency(unsigned)</STRONG> (Thumb, 126 bytes, Stack size 20 bytes, stm32f10x__rcc.o(i._ZN6periph9flash_reg11FLASH_Class10SetLatencyEj))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = periph::flash_reg::FLASH_Class::SetLatency(unsigned)
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;periph::rcc_reg::RCC_Class::Config(const periph::SysclkConfigStruct&)
+</UL>
+
+<P><STRONG><a name="[3f]"></a>Font1608::~Font1608()</STRONG> (Thumb, 14 bytes, Stack size 4 bytes, font.o(i._ZN8Font1608D1Ev))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = Font1608::~Font1608()
+</UL>
+<BR>[Calls]<UL><LI><a href="#[43]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FontBase::~FontBase__sub_object()
+</UL>
+<BR>[Address Reference Count : 2]<UL><LI> font.o(.constdata__ZTV8Font1608)
+<LI> font.o(.text)
+</UL>
+<P><STRONG><a name="[101]"></a>Font1608::~Font1608__sub_object()</STRONG> (Thumb, 0 bytes, Stack size 4 bytes, font.o(i._ZN8Font1608D1Ev), UNUSED)
+
+<P><STRONG><a name="[aa]"></a>operator delete (void*)</STRONG> (Thumb, 8 bytes, Stack size 8 bytes, delete.o(i._ZdlPv))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = operator delete (void*) &rArr; free
+</UL>
+<BR>[Calls]<UL><LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;free
+</UL>
+<BR>[Called By]<UL><LI><a href="#[44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FontBase::~FontBase__deallocating()
+</UL>
+
+<P><STRONG><a name="[ab]"></a>__aeabi_atexit</STRONG> (Thumb, 48 bytes, Stack size 24 bytes, aeabi_atexit.o(i.__aeabi_atexit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = __aeabi_atexit &rArr; malloc &rArr; __Heap_Full &rArr; __Heap_ProvideMemory &rArr; free
+</UL>
+<BR>[Calls]<UL><LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;malloc
+<LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_ddtor_pointer_addr
+</UL>
+<BR>[Called By]<UL><LI><a href="#[49]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__sti___8_font_cpp
+</UL>
+
+<P><STRONG><a name="[58]"></a>__cxa_finalize</STRONG> (Thumb, 66 bytes, Stack size 24 bytes, cxa_finalize.o(i.__cxa_finalize))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = __cxa_finalize &rArr; free
+</UL>
+<BR>[Calls]<UL><LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;free
+<LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_ddtor_pointer_addr
+</UL>
+<BR>[Called By]<UL><LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_lib_shutdown_cpp_1
+</UL>
+
+<P><STRONG><a name="[42]"></a>__cxa_pure_virtual</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, pure_virt.o(i.__cxa_pure_virtual))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = __cxa_pure_virtual &rArr; __rt_SIGPVFN &rArr; __rt_SIGPVFN_inner &rArr; __default_signal_display &rArr; _ttywrch &rArr; sendchar
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_SIGPVFN
+</UL>
+<BR>[Address Reference Count : 2]<UL><LI> iostream.o(.constdata__ZTVN4nstd7OStreamIcEE)
+<LI> font.o(.constdata__ZTV8FontBase)
+</UL>
+<P><STRONG><a name="[51]"></a>_fp_init</STRONG> (Thumb, 14 bytes, Stack size 8 bytes, fpinit.o(x$fpl$fpinit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = _fp_init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_fp_status_addr
+</UL>
+<BR>[Called By]<UL><LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_lib_init
+</UL>
+
+<P><STRONG><a name="[102]"></a>__fplib_config_pureend_doubles</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, fpinit.o(x$fpl$fpinit), UNUSED)
+<P>
+<H3>
+Local Symbols
+</H3>
+<P><STRONG><a name="[46]"></a>__sti___12_cpp_Test_cpp</STRONG> (Thumb, 32 bytes, Stack size 8 bytes, cpp_test.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = __sti___12_cpp_Test_cpp &rArr; task_init_stack_frame::task_init_stack_frame(unsigned, unsigned, void(*)())
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;task_init_stack_frame::task_init_stack_frame(unsigned, unsigned, void(*)())
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> cpp_test.o(.init_array)
+</UL>
+<P><STRONG><a name="[47]"></a>__sti___12_IOStream_cpp</STRONG> (Thumb, 20 bytes, Stack size 8 bytes, iostream.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = __sti___12_IOStream_cpp
+</UL>
+<BR>[Calls]<UL><LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nstd::TextOutStream::TextOutStream()
+<LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nstd::TextInStream::TextInStream()
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> iostream.o(.init_array)
+</UL>
+<P><STRONG><a name="[48]"></a>__sti___11_lcd_gui_cpp</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, lcd_gui.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> lcd_gui.o(.init_array)
+</UL>
+<P><STRONG><a name="[49]"></a>__sti___8_font_cpp</STRONG> (Thumb, 24 bytes, Stack size 8 bytes, font.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = __sti___8_font_cpp &rArr; __aeabi_atexit &rArr; malloc &rArr; __Heap_Full &rArr; __Heap_ProvideMemory &rArr; free
+</UL>
+<BR>[Calls]<UL><LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_atexit
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> font.o(.init_array)
+</UL><P>
+<H3>
+Undefined Global Symbols
+</H3><HR></body></html>

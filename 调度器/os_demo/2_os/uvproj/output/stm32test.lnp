@@ -1,0 +1,4 @@
+--cpu Cortex-M3 ".\output\cpp_test.o" ".\output\stm32f10x__tim.o" ".\output\stm32f10x__spi.o" ".\output\allocator.o" ".\output\template.o" ".\output\stm32f10x_it.o" ".\output\sys.o" ".\output\usart.o" ".\output\debug.o" ".\output\iostream.o" ".\output\nstd_type.o" ".\output\utilities.o" ".\output\startup_stm32f10x_md.o" ".\output\core_cm3.o" ".\output\stm32f10x__gpio_cpin.o" ".\output\stm32f10x__nvic.o" ".\output\stm32f10x__rcc.o" ".\output\stm32f10x__usart.o" ".\output\stm32f10x__gpio.o" D:\Library\Documemts\MyCodeLib\MCU\KeilARM\os\stm32stdlib\stm32f10x_stdPeriphLib_Release.lib ".\output\fat_fs.o" ".\output\mmc_sd.o" ".\output\ili93xx.o" ".\output\lcd_gui.o" ".\output\font.o" --strict --scatter ".\output\stm32test.sct" 
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\listing\stm32test.map" -o ".\output\stm32test.axf"
