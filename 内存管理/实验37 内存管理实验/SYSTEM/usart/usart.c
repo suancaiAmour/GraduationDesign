@@ -43,6 +43,14 @@ struct __FILE
 
 }; 
 
+_ttywrch(int ch) //可以消除这个错误
+
+{
+
+ch=ch;
+
+}
+
 FILE __stdout;       
 //定义_sys_exit()以避免使用半主机模式    
 _sys_exit(int x) 

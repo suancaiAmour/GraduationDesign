@@ -1,13 +1,13 @@
+// 作者 正点原子 酸菜Amour
+
 #ifndef __MYMALLOC_H
 #define __MYMALLOC_H
+
+#include "stm32f10x.h"
 
 #ifndef NULL
 #define NULL 0
 #endif
-
-#define u8 char
-#define u16 short
-#define u32 int
 
 #define MEM_BLOCK_SIZE			32 //每个内存块 32 字节
 #define MEM_MAX_SIZE			40*1024 // 可支配 40K 字节

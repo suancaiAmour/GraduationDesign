@@ -41,8 +41,8 @@ __initial_sp
 ; <h> Heap Configuration
 ;   <o>  Heap Size (in Bytes) <0x0-0xFFFFFFFF:8>
 ; </h>
-
-Heap_Size       EQU     0x00000200
+; no use cm3 heap  my os can create heap
+Heap_Size       EQU     0x00000000
 
                 AREA    HEAP, NOINIT, READWRITE, ALIGN=3
 __heap_base
