@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B818E830-C02B-47DB-93F2-7FF84D26E925}</ProjectGuid>
+    <RootNamespace>stm32</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>..\sys;..\MMC_SD;..\FAT;..\stm32stdlib\CMSIS\CM3\CoreSupport;..\stm32stdlib\CMSIS\CM3\DeviceSupport\ST\STM32F10x;..\stm32stdlib\STM32F10x_StdPeriph_Driver\inc;..\nstd;..\cppfwlib;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\cppfwlib\stm32f10x__AFIO.h" />
+    <ClInclude Include="..\cppfwlib\stm32f10x__cpplib.h" />
+    <ClInclude Include="..\cppfwlib\stm32f10x__EXTI.h" />
+    <ClInclude Include="..\cppfwlib\stm32f10x__FLASH.h" />
+    <ClInclude Include="..\cppfwlib\stm32f10x__GPIO.h" />
+    <ClInclude Include="..\cppfwlib\stm32f10x__GPIO_CPin.h" />
+    <ClInclude Include="..\cppfwlib\stm32f10x__IWDG.h" />
+    <ClInclude Include="..\cppfwlib\stm32f10x__NVIC.h" />
+    <ClInclude Include="..\cppfwlib\stm32f10x__RCC.h" />
+    <ClInclude Include="..\cppfwlib\stm32f10x__SCB.h" />
+    <ClInclude Include="..\cppfwlib\stm32f10x__Systick.h" />
+    <ClInclude Include="..\cppfwlib\stm32f10x__TIM.h" />
+    <ClInclude Include="..\cppfwlib\stm32f10x__USART.h" />
+    <ClInclude Include="..\cppfwlib\stm32f10x__WWDG.h" />
+    <ClInclude Include="..\FAT\FAT_FS.h" />
+    <ClInclude Include="..\FAT\FAT_Struct.h" />
+    <ClInclude Include="..\FAT\FileInfo.h" />
+    <ClInclude Include="..\MMC_SD\MMC_SD.H" />
+    <ClInclude Include="..\MMC_SD\mmc_sd_old_functions.h" />
+    <ClInclude Include="..\nstd\BitOperation.h" />
+    <ClInclude Include="..\nstd\debug.h" />
+    <ClInclude Include="..\nstd\define.h" />
+    <ClInclude Include="..\nstd\FIFO.h" />
+    <ClInclude Include="..\nstd\iostream.h" />
+    <ClInclude Include="..\nstd\nstd_assert.H" />
+    <ClInclude Include="..\nstd\nstd_static_assert.h" />
+    <ClInclude Include="..\nstd\nstd_type.h" />
+    <ClInclude Include="..\nstd\Stack.h" />
+    <ClInclude Include="..\nstd\utilities.h" />
+    <ClInclude Include="..\stm32stdlib\CMSIS\CM3\CoreSupport\core_cm3.h" />
+    <ClInclude Include="..\stm32stdlib\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h" />
+    <ClInclude Include="..\stm32stdlib\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h" />
+    <ClInclude Include="..\stm32stdlib\STM32F10x_StdPeriph_Driver\inc\misc.h" />
+    <ClInclude Include="..\stm32stdlib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h" />
+    <ClInclude Include="..\stm32stdlib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_bkp.h" />
+    <ClInclude Include="..\stm32stdlib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_can.h" />
+    <ClInclude Include="..\stm32stdlib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_cec.h" />
+    <ClInclude Include="..\stm32stdlib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_crc.h" />
+    <ClInclude Include="..\stm32stdlib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dac.h" />
+    <ClInclude Include="..\stm32stdlib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dbgmcu.h" />
+    <ClInclude Include="..\stm32stdlib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h" />
+    <ClInclude Include="..\stm32stdlib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_exti.h" />
+    <ClInclude Include="..\stm32stdlib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h" />
+    <ClInclude Include="..\stm32stdlib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_fsmc.h" />
+    <ClInclude Include="..\stm32stdlib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h" />
+    <ClInclude Include="..\stm32stdlib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_i2c.h" />
+    <ClInclude Include="..\stm32stdlib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_iwdg.h" />
+    <ClInclude Include="..\stm32stdlib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_pwr.h" />
+    <ClInclude Include="..\stm32stdlib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h" />
+    <ClInclude Include="..\stm32stdlib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rtc.h" />
+    <ClInclude Include="..\stm32stdlib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_sdio.h" />
+    <ClInclude Include="..\stm32stdlib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi.h" />
+    <ClInclude Include="..\stm32stdlib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h" />
+    <ClInclude Include="..\stm32stdlib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h" />
+    <ClInclude Include="..\stm32stdlib\STM32F10x_StdPeriph_Driver\inc\stm32f10x_wwdg.h" />
+    <ClInclude Include="..\sys\stm32f10x_conf.h" />
+    <ClInclude Include="..\sys\stm32f10x_it.h" />
+    <ClInclude Include="..\sys\sys.h" />
+    <ClInclude Include="..\sys\USART.H" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\cppfwlib\stm32f10x__GPIO_CPin.cpp" />
+    <ClCompile Include="..\cppfwlib\stm32f10x__NVIC.cpp" />
+    <ClCompile Include="..\cppfwlib\stm32f10x__RCC.cpp" />
+    <ClCompile Include="..\cppfwlib\stm32f10x__USART.cpp" />
+    <ClCompile Include="..\FAT\FAT_FS.cpp" />
+    <ClCompile Include="..\main\cpp_Test.cpp" />
+    <ClCompile Include="..\MMC_SD\MMC_SD.cpp" />
+    <ClCompile Include="..\nstd\Debug.cpp" />
+    <ClCompile Include="..\nstd\IOStream.cpp" />
+    <ClCompile Include="..\nstd\nstd_type.cpp" />
+    <ClCompile Include="..\nstd\utilities.cpp" />
+    <ClCompile Include="..\stm32stdlib\CMSIS\CM3\CoreSupport\core_cm3.c" />
+    <ClCompile Include="..\stm32stdlib\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.c" />
+    <ClCompile Include="..\sys\stm32f10x_it.cpp" />
+    <ClCompile Include="..\sys\SYS.cpp" />
+    <ClCompile Include="..\sys\usart.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
