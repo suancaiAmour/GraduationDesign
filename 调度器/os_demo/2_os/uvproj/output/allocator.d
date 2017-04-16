@@ -1,0 +1,12 @@
+.\output\allocator.o: ..\main\allocator.cpp
+.\output\allocator.o: ..\main\allocator.h
+.\output\allocator.o: ..\nstd\nstd_type.h
+.\output\allocator.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\output\allocator.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\output\allocator.o: ..\nstd\define.h
+.\output\allocator.o: ..\nstd\nstd_assert.h
+.\output\allocator.o: ..\nstd\nstd_static_assert.h
+.\output\allocator.o: ..\nstd\debug.h
+.\output\allocator.o: ..\nstd\iostream.h
+.\output\allocator.o: ..\nstd\FIFO.h
+.\output\allocator.o: ..\nstd\utilities.h

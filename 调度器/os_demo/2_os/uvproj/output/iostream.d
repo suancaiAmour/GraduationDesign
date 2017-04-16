@@ -1,0 +1,10 @@
+.\output\iostream.o: ..\nstd\IOStream.cpp
+.\output\iostream.o: ..\nstd\IOStream.h
+.\output\iostream.o: ..\nstd\define.h
+.\output\iostream.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\output\iostream.o: ..\nstd\FIFO.h
+.\output\iostream.o: ..\nstd\nstd_type.h
+.\output\iostream.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\output\iostream.o: ..\nstd\utilities.h
+.\output\iostream.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\new
+.\output\iostream.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\exception

@@ -1,0 +1,11 @@
+.\output\utilities.o: ..\nstd\utilities.cpp
+.\output\utilities.o: ..\nstd\utilities.h
+.\output\utilities.o: ..\nstd\nstd_type.h
+.\output\utilities.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\output\utilities.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\output\utilities.o: ..\nstd\define.h
+.\output\utilities.o: ..\nstd\Debug.h
+.\output\utilities.o: ..\nstd\iostream.h
+.\output\utilities.o: ..\nstd\FIFO.h
+.\output\utilities.o: ..\nstd\nstd_assert.H
+.\output\utilities.o: ..\nstd\nstd_static_assert.h

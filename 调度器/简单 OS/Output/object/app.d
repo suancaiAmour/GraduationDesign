@@ -1,0 +1,9 @@
+..\output\object\app.o: ..\Src\App\src\App.c
+..\output\object\app.o: ..\Src\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h
+..\output\object\app.o: ..\Src\Libraries\CMSIS\CM3\CoreSupport\core_cm3.h
+..\output\object\app.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+..\output\object\app.o: ..\Src\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\system_stm32f10x.h
+..\output\object\app.o: ..\Src\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h
+..\output\object\app.o: ..\Src\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h
+..\output\object\app.o: ..\Src\Switch\switch.h
+..\output\object\app.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
