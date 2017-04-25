@@ -73,17 +73,17 @@ void DebugMon_Handler(void)
 {
 }
  
-void PendSV_Handler(void)
-{
-}
- 
-void SysTick_Handler(void)
-{
-//	while(1)
-//	{
-//		printf("触发到");
-//	}
-}
+//__weak void PendSV_Handler(void)
+//{
+//}
+// 
+//__weak void SysTick_Handler(void)
+//{
+////	while(1)
+////	{
+////		printf("触发到");
+////	}
+//}
 unsigned int Tim_RIsing_count = 0; //上升沿计数
 unsigned int Tim_Falling_count = 0;//下降沿计数
 

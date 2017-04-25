@@ -1,7 +1,7 @@
 .\led.o: ..\HARDWARE\LED\led.c
 .\led.o: ..\HARDWARE\LED\../../h/stm32f10x.h
 .\led.o: ..\HARDWARE\LED\../../h/core_cm3.h
-.\led.o: D:\Keil\ARM\ARMCC\include\stdint.h
+.\led.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\led.o: ..\HARDWARE\LED\../../h/system_stm32f10x.h
 .\led.o: ..\HARDWARE\LED\../../h/stm32f10x_conf.h
 .\led.o: ..\HARDWARE\LED\../../h/stm32f10x_adc.h

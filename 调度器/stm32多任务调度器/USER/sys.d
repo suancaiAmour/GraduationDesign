@@ -2,7 +2,7 @@
 .\sys.o: ..\h\sys.h
 .\sys.o: ..\h\stm32f10x.h
 .\sys.o: ..\h\core_cm3.h
-.\sys.o: D:\Keil\ARM\ARMCC\include\stdint.h
+.\sys.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\sys.o: ..\h\system_stm32f10x.h
 .\sys.o: ..\h\stm32f10x_conf.h
 .\sys.o: ..\h\stm32f10x_adc.h

@@ -3,7 +3,7 @@
 .\init.o: ../h/../h/led.h
 .\init.o: ../h/../h/stm32f10x.h
 .\init.o: ../h/../h/core_cm3.h
-.\init.o: D:\Keil\ARM\ARMCC\include\stdint.h
+.\init.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\init.o: ../h/../h/system_stm32f10x.h
 .\init.o: ../h/../h/stm32f10x_conf.h
 .\init.o: ../h/../h/stm32f10x_adc.h
@@ -34,8 +34,9 @@
 .\init.o: ../h/../h/sys.h
 .\init.o: ../h/../h/key.h
 .\init.o: ../h/../h/usart.h
-.\init.o: D:\Keil\ARM\ARMCC\bin\..\include\stdio.h
+.\init.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 .\init.o: ../h/../h/timer.h
 .\init.o: ../h/../h/main.h
+.\init.o: ../h/../h/switch.h
 .\init.o: ../h/../h/../h/init.h
 .\init.o: ../h/../h/../h/timer.h

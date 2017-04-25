@@ -2,7 +2,7 @@
 .\misc.o: ..\h\misc.h
 .\misc.o: ..\h\stm32f10x.h
 .\misc.o: ..\h\core_cm3.h
-.\misc.o: D:\Keil\ARM\ARMCC\include\stdint.h
+.\misc.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\misc.o: ..\h\system_stm32f10x.h
 .\misc.o: ..\h\stm32f10x_conf.h
 .\misc.o: ..\h\stm32f10x_adc.h

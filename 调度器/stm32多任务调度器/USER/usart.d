@@ -1,9 +1,9 @@
 .\usart.o: ..\SYSTEM\usart\usart.c
 .\usart.o: ..\h\usart.h
-.\usart.o: D:\Keil\ARM\ARMCC\bin\..\include\stdio.h
+.\usart.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 .\usart.o: ..\h\stm32f10x.h
 .\usart.o: ..\h\core_cm3.h
-.\usart.o: D:\Keil\ARM\ARMCC\include\stdint.h
+.\usart.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\usart.o: ..\h\system_stm32f10x.h
 .\usart.o: ..\h\stm32f10x_conf.h
 .\usart.o: ..\h\stm32f10x_adc.h

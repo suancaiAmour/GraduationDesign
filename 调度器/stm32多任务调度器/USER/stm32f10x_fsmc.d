@@ -2,7 +2,7 @@
 .\stm32f10x_fsmc.o: ..\h\stm32f10x_fsmc.h
 .\stm32f10x_fsmc.o: ..\h\stm32f10x.h
 .\stm32f10x_fsmc.o: ..\h\core_cm3.h
-.\stm32f10x_fsmc.o: D:\Keil\ARM\ARMCC\include\stdint.h
+.\stm32f10x_fsmc.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\stm32f10x_fsmc.o: ..\h\system_stm32f10x.h
 .\stm32f10x_fsmc.o: ..\h\stm32f10x_conf.h
 .\stm32f10x_fsmc.o: ..\h\stm32f10x_adc.h

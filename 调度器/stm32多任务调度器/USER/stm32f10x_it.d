@@ -2,7 +2,7 @@
 .\stm32f10x_it.o: ..\h\stm32f10x_it.h
 .\stm32f10x_it.o: ..\h\stm32f10x.h
 .\stm32f10x_it.o: ..\h\core_cm3.h
-.\stm32f10x_it.o: D:\Keil\ARM\ARMCC\include\stdint.h
+.\stm32f10x_it.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\stm32f10x_it.o: ..\h\system_stm32f10x.h
 .\stm32f10x_it.o: ..\h\stm32f10x_conf.h
 .\stm32f10x_it.o: ..\h\stm32f10x_adc.h
@@ -30,6 +30,6 @@
 .\stm32f10x_it.o: ..\h\stm32f10x_wwdg.h
 .\stm32f10x_it.o: ..\h\misc.h
 .\stm32f10x_it.o: ..\h\usart.h
-.\stm32f10x_it.o: D:\Keil\ARM\ARMCC\bin\..\include\stdio.h
+.\stm32f10x_it.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 .\stm32f10x_it.o: ..\h\delay.h
 .\stm32f10x_it.o: ..\h\sys.h

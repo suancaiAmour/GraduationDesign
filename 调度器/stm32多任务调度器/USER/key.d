@@ -1,7 +1,7 @@
 .\key.o: ..\HARDWARE\KEY\key.c
 .\key.o: ..\h\stm32f10x.h
 .\key.o: ..\h\core_cm3.h
-.\key.o: D:\Keil\ARM\ARMCC\include\stdint.h
+.\key.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\key.o: ..\h\system_stm32f10x.h
 .\key.o: ..\h\stm32f10x_conf.h
 .\key.o: ..\h\stm32f10x_adc.h

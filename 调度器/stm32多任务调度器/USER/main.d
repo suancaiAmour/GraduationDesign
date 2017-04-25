@@ -3,7 +3,7 @@
 .\main.o: ../h/../h/led.h
 .\main.o: ../h/../h/stm32f10x.h
 .\main.o: ../h/../h/core_cm3.h
-.\main.o: D:\Keil\ARM\ARMCC\include\stdint.h
+.\main.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\main.o: ../h/../h/system_stm32f10x.h
 .\main.o: ../h/../h/stm32f10x_conf.h
 .\main.o: ../h/../h/stm32f10x_adc.h
@@ -34,7 +34,8 @@
 .\main.o: ../h/../h/sys.h
 .\main.o: ../h/../h/key.h
 .\main.o: ../h/../h/usart.h
-.\main.o: D:\Keil\ARM\ARMCC\bin\..\include\stdio.h
+.\main.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\main.o: ../h/switch.h
 .\main.o: ../h/../h/init.h
 .\main.o: ../h/../h/../h/timer.h
 .\main.o: ../h/../h/../h/main.h

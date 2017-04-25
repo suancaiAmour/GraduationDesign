@@ -11,6 +11,10 @@ extern"C"
 #include "../h/stm32f10x.h"
 #include "../h/stm32f10x_gpio.h"
 #include "../h/core_cm3.h"
+	
+#include "switch.h"
+#include <stdio.h>
+#include "usart.h"
 
 	void Task0(void);
 	void Task1(void);
