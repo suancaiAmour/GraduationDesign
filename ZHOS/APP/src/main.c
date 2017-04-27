@@ -14,15 +14,23 @@ void Task0(void)
    }
 }
 
-void Task2(void)
+void Task3(void)
 {
 	while(1)
 	{
-		lw_oopc_report();
-		SwitchDelay(10000);
-		TaskEnd();
+		ZHLog("хннЯ3\r\n");
+		SwitchDelay(1000);
 	}
 }
+
+void Task2(void)
+{
+	lw_oopc_report();
+	CreateTask(Task3);
+	TaskEnd();
+}
+
+
 
 void Task1(void)
 {
@@ -35,10 +43,11 @@ void Task1(void)
 }
 
 
+
 int main(void)
 {
 	NVIC_Configuration();
-	uart_init(9600);
+	uart_init(115200);
 	SwitchStart();
 	CreateTask(Task0);
 	CreateTask(Task1);
