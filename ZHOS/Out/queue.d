@@ -1,0 +1,17 @@
+.\out\queue.o: ZHOS\src\queue.c
+.\out\queue.o: .\ZHOS\inc\queue.h
+.\out\queue.o: .\ZHOS\inc\lw_oopc.h
+.\out\queue.o: .\ZHOS\inc\log.h
+.\out\queue.o: .\SYS\inc\sys.h
+.\out\queue.o: D:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include\stm32f10x.h
+.\out\queue.o: .\CORE\inc\core_cm3.h
+.\out\queue.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\out\queue.o: D:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include\system_stm32f10x.h
+.\out\queue.o: .\APP\inc\stm32f10x_conf.h
+.\out\queue.o: .\STM32F10x_FWLib\inc\stm32f10x_gpio.h
+.\out\queue.o: D:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include\stm32f10x.h
+.\out\queue.o: .\STM32F10x_FWLib\inc\stm32f10x_rcc.h
+.\out\queue.o: .\STM32F10x_FWLib\inc\stm32f10x_usart.h
+.\out\queue.o: .\STM32F10x_FWLib\inc\misc.h
+.\out\queue.o: .\ZHOS\inc\memory.h
+.\out\queue.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h

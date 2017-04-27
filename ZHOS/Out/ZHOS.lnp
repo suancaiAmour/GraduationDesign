@@ -1,0 +1,19 @@
+--cpu Cortex-M3
+".\out\lw_oopc.o"
+".\out\memory.o"
+".\out\switch.o"
+".\out\log.o"
+".\out\queue.o"
+".\out\core_cm3.o"
+".\out\startup_stm32f10x_hd.o"
+".\out\sys.o"
+".\out\system_stm32f10x.o"
+".\out\misc.o"
+".\out\stm32f10x_usart.o"
+".\out\stm32f10x_gpio.o"
+".\out\stm32f10x_rcc.o"
+".\out\main.o"
+--strict --scatter ".\Out\ZHOS.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\ZHOS.map" -o .\Out\ZHOS.axf
