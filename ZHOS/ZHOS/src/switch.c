@@ -6,8 +6,8 @@
 #include "memory.h"
 #include "log.h"
 
-#define MAX_TASK          20
-#define TASK_TACK_DEEP      100
+#include "ZHOS.h"
+
 #define N_TICK_IN_SECOND  1000
 
 typedef uint32_t OS_STK;
@@ -19,7 +19,7 @@ typedef struct TCB
 	uint16_t Delay;
 }TCB;
 
-static struct ZHQueue *TCBQueue;
+static ZHQueue *TCBQueue;
 static unsigned int taskCount;
 TCB  *TaskNew, *TaskRuning, *IdleTask;
 
@@ -174,8 +174,7 @@ void TaskEnd(void)
 void SwitchStart(void)
 {
 	TCBQueue = ZHQueue_new("系统任务队列");
-	TCBQueue->init(TCBQueue, MAX_TASK); // 任务队列只能存 MAX_TASK 个任务
-	SystemInit(); 																 
+	TCBQueue->init(TCBQueue, MAX_TASK); // 任务队列只能存 MAX_TASK 个任务 																 
 	__set_PSP(0); 															
 	CreateTask(TaskIdle);
 	IdleTask = (TCB *)TCBQueue->deQueue(TCBQueue);

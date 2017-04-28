@@ -14,5 +14,8 @@
 .\out\lw_oopc.o: .\STM32F10x_FWLib\inc\stm32f10x_rcc.h
 .\out\lw_oopc.o: .\STM32F10x_FWLib\inc\stm32f10x_usart.h
 .\out\lw_oopc.o: .\STM32F10x_FWLib\inc\misc.h
+.\out\lw_oopc.o: .\ZHOS\inc\ZHOS.h
+.\out\lw_oopc.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\out\lw_oopc.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
 .\out\lw_oopc.o: .\ZHOS\inc\log.h
 .\out\lw_oopc.o: .\SYS\inc\sys.h

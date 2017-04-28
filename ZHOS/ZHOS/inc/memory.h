@@ -4,9 +4,9 @@
 #define __MEMORY_H
 
 #include "stm32f10x.h"
+#include "ZHOS.h"
 
 #define MEM_BLOCK_SIZE			32 //每个内存块 32 字节
-#define MEM_MAX_SIZE			40*1024 // 可支配 40K 字节
 #define MEM_ALLOC_TABLE_SIZE	MEM_MAX_SIZE/MEM_BLOCK_SIZE
 
 void myfree(void *ptr);

@@ -14,4 +14,6 @@
 .\out\queue.o: .\STM32F10x_FWLib\inc\stm32f10x_usart.h
 .\out\queue.o: .\STM32F10x_FWLib\inc\misc.h
 .\out\queue.o: .\ZHOS\inc\memory.h
+.\out\queue.o: .\ZHOS\inc\ZHOS.h
 .\out\queue.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\out\queue.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h

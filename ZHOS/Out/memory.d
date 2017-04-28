@@ -10,4 +10,8 @@
 .\out\memory.o: .\STM32F10x_FWLib\inc\stm32f10x_rcc.h
 .\out\memory.o: .\STM32F10x_FWLib\inc\stm32f10x_usart.h
 .\out\memory.o: .\STM32F10x_FWLib\inc\misc.h
+.\out\memory.o: .\ZHOS\inc\ZHOS.h
+.\out\memory.o: .\ZHOS\inc\lw_oopc.h
+.\out\memory.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\out\memory.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
 .\out\memory.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h

@@ -15,5 +15,7 @@
 .\out\switch.o: .\ZHOS\inc\queue.h
 .\out\switch.o: .\ZHOS\inc\lw_oopc.h
 .\out\switch.o: .\ZHOS\inc\memory.h
+.\out\switch.o: .\ZHOS\inc\ZHOS.h
+.\out\switch.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
 .\out\switch.o: .\ZHOS\inc\log.h
 .\out\switch.o: .\SYS\inc\sys.h

@@ -4,6 +4,7 @@
 ".\out\switch.o"
 ".\out\log.o"
 ".\out\queue.o"
+".\out\zhos.o"
 ".\out\core_cm3.o"
 ".\out\startup_stm32f10x_hd.o"
 ".\out\sys.o"
