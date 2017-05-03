@@ -160,7 +160,7 @@ void TaskEnd(void)
 		task = TCBQueue->deQueue(TCBQueue);
 		if(task == TaskRuning)
 		{
-			myfree(task->pTaskStack + 14);
+			myfree(task->pTaskStack + 16 - TASK_TACK_DEEP);
 			myfree(task);
 			TaskNew = TCBQueue->deQueue(TCBQueue);
 			TCBQueue->enQueue(TCBQueue, TaskNew);
