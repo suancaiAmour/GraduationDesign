@@ -794,65 +794,65 @@ Image Symbol Table
     i.Task3                                  0x08001fe4   Section        0  main.o(i.Task3)
     i.Task4                                  0x0800200c   Section        0  main.o(i.Task4)
     i.TaskEnd                                0x0800203c   Section        0  switch.o(i.TaskEnd)
-    i.TaskIdle                               0x080020bc   Section        0  switch.o(i.TaskIdle)
-    i.USART_Cmd                              0x080020c8   Section        0  stm32f10x_usart.o(i.USART_Cmd)
-    i.USART_GetFlagStatus                    0x080020e0   Section        0  stm32f10x_usart.o(i.USART_GetFlagStatus)
-    i.USART_ITConfig                         0x080020fa   Section        0  stm32f10x_usart.o(i.USART_ITConfig)
-    i.USART_Init                             0x08002144   Section        0  stm32f10x_usart.o(i.USART_Init)
-    i.USART_SendData                         0x0800221c   Section        0  stm32f10x_usart.o(i.USART_SendData)
-    i.ZHLog                                  0x08002224   Section        0  log.o(i.ZHLog)
-    i.ZHOSInit                               0x08002274   Section        0  zhos.o(i.ZHOSInit)
-    i.ZHQueue_ctor                           0x080022c0   Section        0  queue.o(i.ZHQueue_ctor)
-    i.ZHQueue_new                            0x080022fc   Section        0  queue.o(i.ZHQueue_new)
-    i.ZHQueuedealloc11111                    0x08002328   Section        0  queue.o(i.ZHQueuedealloc11111)
-    i.__ARM_fpclassify                       0x0800232a   Section        0  fpclassify.o(i.__ARM_fpclassify)
-    i._is_digit                              0x08002352   Section        0  __printf_wp.o(i._is_digit)
-    i._mem_free                              0x08002360   Section        0  memory.o(i._mem_free)
-    _mem_free                                0x08002361   Thumb Code    64  memory.o(i._mem_free)
-    i._mem_init                              0x080023a4   Section        0  memory.o(i._mem_init)
-    _mem_init                                0x080023a5   Thumb Code    38  memory.o(i._mem_init)
-    i._mem_malloc                            0x080023d0   Section        0  memory.o(i._mem_malloc)
-    _mem_malloc                              0x080023d1   Thumb Code   106  memory.o(i._mem_malloc)
-    i.deQueue                                0x08002440   Section        0  queue.o(i.deQueue)
-    i.enQueue                                0x0800248c   Section        0  queue.o(i.enQueue)
-    i.getConWithIndex                        0x080024dc   Section        0  queue.o(i.getConWithIndex)
-    i.lw_oopc_malloc                         0x08002524   Section        0  lw_oopc.o(i.lw_oopc_malloc)
-    i.lw_oopc_report                         0x080025b8   Section        0  lw_oopc.o(i.lw_oopc_report)
-    i.main                                   0x08002668   Section        0  main.o(i.main)
-    i.myfree                                 0x08002698   Section        0  memory.o(i.myfree)
-    i.mymalloc                               0x080026b4   Section        0  memory.o(i.mymalloc)
-    i.mymemperused                           0x080026d4   Section        0  memory.o(i.mymemperused)
-    i.mymemset                               0x08002704   Section        0  memory.o(i.mymemset)
-    i.queueDealloc                           0x08002718   Section        0  queue.o(i.queueDealloc)
-    i.queueInit                              0x08002724   Section        0  queue.o(i.queueInit)
-    i.rootClass_ctor                         0x0800275c   Section        0  lw_oopc.o(i.rootClass_ctor)
-    i.uart_init                              0x08002760   Section        0  log.o(i.uart_init)
-    locale$$code                             0x08002800   Section       44  lc_numeric_c.o(locale$$code)
-    locale$$code                             0x0800282c   Section       44  lc_ctype_c.o(locale$$code)
-    x$fpl$printf1                            0x08002858   Section        4  printf1.o(x$fpl$printf1)
-    .constdata                               0x0800285c   Section        8  _printf_wctomb.o(.constdata)
-    x$fpl$usenofp                            0x0800285c   Section        0  usenofp.o(x$fpl$usenofp)
-    initial_mbstate                          0x0800285c   Data           8  _printf_wctomb.o(.constdata)
-    .constdata                               0x08002864   Section       40  _printf_hex_int_ll_ptr.o(.constdata)
-    uc_hextab                                0x08002864   Data          20  _printf_hex_int_ll_ptr.o(.constdata)
-    lc_hextab                                0x08002878   Data          20  _printf_hex_int_ll_ptr.o(.constdata)
-    .constdata                               0x0800288c   Section       17  __printf_flags_ss_wp.o(.constdata)
-    maptable                                 0x0800288c   Data          17  __printf_flags_ss_wp.o(.constdata)
-    .constdata                               0x080028a0   Section      148  bigflt0.o(.constdata)
-    tenpwrs_x                                0x080028a0   Data          60  bigflt0.o(.constdata)
-    tenpwrs_i                                0x080028dc   Data          64  bigflt0.o(.constdata)
-    .conststring                             0x08002934   Section       71  lw_oopc.o(.conststring)
-    locale$$data                             0x0800299c   Section       28  lc_numeric_c.o(locale$$data)
-    __lcnum_c_name                           0x080029a0   Data           2  lc_numeric_c.o(locale$$data)
-    __lcnum_c_start                          0x080029a8   Data           0  lc_numeric_c.o(locale$$data)
-    __lcnum_c_point                          0x080029b4   Data           0  lc_numeric_c.o(locale$$data)
-    __lcnum_c_thousands                      0x080029b6   Data           0  lc_numeric_c.o(locale$$data)
-    __lcnum_c_grouping                       0x080029b7   Data           0  lc_numeric_c.o(locale$$data)
-    locale$$data                             0x080029b8   Section      272  lc_ctype_c.o(locale$$data)
-    __lcnum_c_end                            0x080029b8   Data           0  lc_numeric_c.o(locale$$data)
-    __lcctype_c_name                         0x080029bc   Data           2  lc_ctype_c.o(locale$$data)
-    __lcctype_c_start                        0x080029c4   Data           0  lc_ctype_c.o(locale$$data)
-    __lcctype_c_end                          0x08002ac8   Data           0  lc_ctype_c.o(locale$$data)
+    i.TaskIdle                               0x080020b8   Section        0  switch.o(i.TaskIdle)
+    i.USART_Cmd                              0x080020c4   Section        0  stm32f10x_usart.o(i.USART_Cmd)
+    i.USART_GetFlagStatus                    0x080020dc   Section        0  stm32f10x_usart.o(i.USART_GetFlagStatus)
+    i.USART_ITConfig                         0x080020f6   Section        0  stm32f10x_usart.o(i.USART_ITConfig)
+    i.USART_Init                             0x08002140   Section        0  stm32f10x_usart.o(i.USART_Init)
+    i.USART_SendData                         0x08002218   Section        0  stm32f10x_usart.o(i.USART_SendData)
+    i.ZHLog                                  0x08002220   Section        0  log.o(i.ZHLog)
+    i.ZHOSInit                               0x08002270   Section        0  zhos.o(i.ZHOSInit)
+    i.ZHQueue_ctor                           0x080022bc   Section        0  queue.o(i.ZHQueue_ctor)
+    i.ZHQueue_new                            0x080022f8   Section        0  queue.o(i.ZHQueue_new)
+    i.ZHQueuedealloc11111                    0x08002324   Section        0  queue.o(i.ZHQueuedealloc11111)
+    i.__ARM_fpclassify                       0x08002326   Section        0  fpclassify.o(i.__ARM_fpclassify)
+    i._is_digit                              0x0800234e   Section        0  __printf_wp.o(i._is_digit)
+    i._mem_free                              0x0800235c   Section        0  memory.o(i._mem_free)
+    _mem_free                                0x0800235d   Thumb Code    64  memory.o(i._mem_free)
+    i._mem_init                              0x080023a0   Section        0  memory.o(i._mem_init)
+    _mem_init                                0x080023a1   Thumb Code    38  memory.o(i._mem_init)
+    i._mem_malloc                            0x080023cc   Section        0  memory.o(i._mem_malloc)
+    _mem_malloc                              0x080023cd   Thumb Code   106  memory.o(i._mem_malloc)
+    i.deQueue                                0x0800243c   Section        0  queue.o(i.deQueue)
+    i.enQueue                                0x08002488   Section        0  queue.o(i.enQueue)
+    i.getConWithIndex                        0x080024d8   Section        0  queue.o(i.getConWithIndex)
+    i.lw_oopc_malloc                         0x08002520   Section        0  lw_oopc.o(i.lw_oopc_malloc)
+    i.lw_oopc_report                         0x080025b4   Section        0  lw_oopc.o(i.lw_oopc_report)
+    i.main                                   0x08002664   Section        0  main.o(i.main)
+    i.myfree                                 0x08002694   Section        0  memory.o(i.myfree)
+    i.mymalloc                               0x080026b0   Section        0  memory.o(i.mymalloc)
+    i.mymemperused                           0x080026d0   Section        0  memory.o(i.mymemperused)
+    i.mymemset                               0x08002700   Section        0  memory.o(i.mymemset)
+    i.queueDealloc                           0x08002714   Section        0  queue.o(i.queueDealloc)
+    i.queueInit                              0x08002720   Section        0  queue.o(i.queueInit)
+    i.rootClass_ctor                         0x08002758   Section        0  lw_oopc.o(i.rootClass_ctor)
+    i.uart_init                              0x0800275c   Section        0  log.o(i.uart_init)
+    locale$$code                             0x080027fc   Section       44  lc_numeric_c.o(locale$$code)
+    locale$$code                             0x08002828   Section       44  lc_ctype_c.o(locale$$code)
+    x$fpl$printf1                            0x08002854   Section        4  printf1.o(x$fpl$printf1)
+    .constdata                               0x08002858   Section        8  _printf_wctomb.o(.constdata)
+    x$fpl$usenofp                            0x08002858   Section        0  usenofp.o(x$fpl$usenofp)
+    initial_mbstate                          0x08002858   Data           8  _printf_wctomb.o(.constdata)
+    .constdata                               0x08002860   Section       40  _printf_hex_int_ll_ptr.o(.constdata)
+    uc_hextab                                0x08002860   Data          20  _printf_hex_int_ll_ptr.o(.constdata)
+    lc_hextab                                0x08002874   Data          20  _printf_hex_int_ll_ptr.o(.constdata)
+    .constdata                               0x08002888   Section       17  __printf_flags_ss_wp.o(.constdata)
+    maptable                                 0x08002888   Data          17  __printf_flags_ss_wp.o(.constdata)
+    .constdata                               0x0800289c   Section      148  bigflt0.o(.constdata)
+    tenpwrs_x                                0x0800289c   Data          60  bigflt0.o(.constdata)
+    tenpwrs_i                                0x080028d8   Data          64  bigflt0.o(.constdata)
+    .conststring                             0x08002930   Section       71  lw_oopc.o(.conststring)
+    locale$$data                             0x08002998   Section       28  lc_numeric_c.o(locale$$data)
+    __lcnum_c_name                           0x0800299c   Data           2  lc_numeric_c.o(locale$$data)
+    __lcnum_c_start                          0x080029a4   Data           0  lc_numeric_c.o(locale$$data)
+    __lcnum_c_point                          0x080029b0   Data           0  lc_numeric_c.o(locale$$data)
+    __lcnum_c_thousands                      0x080029b2   Data           0  lc_numeric_c.o(locale$$data)
+    __lcnum_c_grouping                       0x080029b3   Data           0  lc_numeric_c.o(locale$$data)
+    locale$$data                             0x080029b4   Section      272  lc_ctype_c.o(locale$$data)
+    __lcnum_c_end                            0x080029b4   Data           0  lc_numeric_c.o(locale$$data)
+    __lcctype_c_name                         0x080029b8   Data           2  lc_ctype_c.o(locale$$data)
+    __lcctype_c_start                        0x080029c0   Data           0  lc_ctype_c.o(locale$$data)
+    __lcctype_c_end                          0x08002ac4   Data           0  lc_ctype_c.o(locale$$data)
     .data                                    0x20000000   Section        4  lw_oopc.o(.data)
     lw_oopc_memAllocList                     0x20000000   Data           4  lw_oopc.o(.data)
     .data                                    0x20000004   Section       12  memory.o(.data)
@@ -1128,7 +1128,7 @@ Image Symbol Table
     _btod_ediv                               0x08001675   Thumb Code    40  btod.o(CL$$btod_ediv)
     _btod_emul                               0x0800169d   Thumb Code    40  btod.o(CL$$btod_emul)
     __btod_mult_common                       0x080016c5   Thumb Code   580  btod.o(CL$$btod_mult_common)
-    CreateTask                               0x08001909   Thumb Code    90  switch.o(i.CreateTask)
+    CreateTask                               0x08001909   Thumb Code    92  switch.o(i.CreateTask)
     GPIO_Init                                0x08001981   Thumb Code   278  stm32f10x_gpio.o(i.GPIO_Init)
     NVIC_Configuration                       0x08001a97   Thumb Code    12  sys.o(i.NVIC_Configuration)
     NVIC_Init                                0x08001aa5   Thumb Code   100  misc.o(i.NVIC_Init)
@@ -1148,41 +1148,41 @@ Image Symbol Table
     Task2                                    0x08001fbd   Thumb Code    30  main.o(i.Task2)
     Task3                                    0x08001fe5   Thumb Code    26  main.o(i.Task3)
     Task4                                    0x0800200d   Thumb Code    26  main.o(i.Task4)
-    TaskEnd                                  0x0800203d   Thumb Code   112  switch.o(i.TaskEnd)
-    TaskIdle                                 0x080020bd   Thumb Code    12  switch.o(i.TaskIdle)
-    USART_Cmd                                0x080020c9   Thumb Code    24  stm32f10x_usart.o(i.USART_Cmd)
-    USART_GetFlagStatus                      0x080020e1   Thumb Code    26  stm32f10x_usart.o(i.USART_GetFlagStatus)
-    USART_ITConfig                           0x080020fb   Thumb Code    74  stm32f10x_usart.o(i.USART_ITConfig)
-    USART_Init                               0x08002145   Thumb Code   210  stm32f10x_usart.o(i.USART_Init)
-    USART_SendData                           0x0800221d   Thumb Code     8  stm32f10x_usart.o(i.USART_SendData)
-    ZHLog                                    0x08002225   Thumb Code    72  log.o(i.ZHLog)
-    ZHOSInit                                 0x08002275   Thumb Code    40  zhos.o(i.ZHOSInit)
-    ZHQueue_ctor                             0x080022c1   Thumb Code    36  queue.o(i.ZHQueue_ctor)
-    ZHQueue_new                              0x080022fd   Thumb Code    36  queue.o(i.ZHQueue_new)
-    ZHQueuedealloc11111                      0x08002329   Thumb Code     2  queue.o(i.ZHQueuedealloc11111)
-    __ARM_fpclassify                         0x0800232b   Thumb Code    40  fpclassify.o(i.__ARM_fpclassify)
-    _is_digit                                0x08002353   Thumb Code    14  __printf_wp.o(i._is_digit)
-    deQueue                                  0x08002441   Thumb Code    50  queue.o(i.deQueue)
-    enQueue                                  0x0800248d   Thumb Code    64  queue.o(i.enQueue)
-    getConWithIndex                          0x080024dd   Thumb Code    44  queue.o(i.getConWithIndex)
-    lw_oopc_malloc                           0x08002525   Thumb Code    96  lw_oopc.o(i.lw_oopc_malloc)
-    lw_oopc_report                           0x080025b9   Thumb Code    54  lw_oopc.o(i.lw_oopc_report)
-    main                                     0x08002669   Thumb Code    36  main.o(i.main)
-    myfree                                   0x08002699   Thumb Code    24  memory.o(i.myfree)
-    mymalloc                                 0x080026b5   Thumb Code    28  memory.o(i.mymalloc)
-    mymemperused                             0x080026d5   Thumb Code    42  memory.o(i.mymemperused)
-    mymemset                                 0x08002705   Thumb Code    20  memory.o(i.mymemset)
-    queueDealloc                             0x08002719   Thumb Code    12  queue.o(i.queueDealloc)
-    queueInit                                0x08002725   Thumb Code    34  queue.o(i.queueInit)
-    rootClass_ctor                           0x0800275d   Thumb Code     2  lw_oopc.o(i.rootClass_ctor)
-    uart_init                                0x08002761   Thumb Code   152  log.o(i.uart_init)
-    _get_lc_numeric                          0x08002801   Thumb Code    44  lc_numeric_c.o(locale$$code)
-    _get_lc_ctype                            0x0800282d   Thumb Code    44  lc_ctype_c.o(locale$$code)
-    _printf_fp_dec                           0x08002859   Thumb Code     4  printf1.o(x$fpl$printf1)
-    __I$use$fp                               0x0800285c   Number         0  usenofp.o(x$fpl$usenofp)
-    Region$$Table$$Base                      0x0800297c   Number         0  anon$$obj.o(Region$$Table)
-    Region$$Table$$Limit                     0x0800299c   Number         0  anon$$obj.o(Region$$Table)
-    __ctype                                  0x080029c5   Data           0  lc_ctype_c.o(locale$$data)
+    TaskEnd                                  0x0800203d   Thumb Code   108  switch.o(i.TaskEnd)
+    TaskIdle                                 0x080020b9   Thumb Code    12  switch.o(i.TaskIdle)
+    USART_Cmd                                0x080020c5   Thumb Code    24  stm32f10x_usart.o(i.USART_Cmd)
+    USART_GetFlagStatus                      0x080020dd   Thumb Code    26  stm32f10x_usart.o(i.USART_GetFlagStatus)
+    USART_ITConfig                           0x080020f7   Thumb Code    74  stm32f10x_usart.o(i.USART_ITConfig)
+    USART_Init                               0x08002141   Thumb Code   210  stm32f10x_usart.o(i.USART_Init)
+    USART_SendData                           0x08002219   Thumb Code     8  stm32f10x_usart.o(i.USART_SendData)
+    ZHLog                                    0x08002221   Thumb Code    72  log.o(i.ZHLog)
+    ZHOSInit                                 0x08002271   Thumb Code    40  zhos.o(i.ZHOSInit)
+    ZHQueue_ctor                             0x080022bd   Thumb Code    36  queue.o(i.ZHQueue_ctor)
+    ZHQueue_new                              0x080022f9   Thumb Code    36  queue.o(i.ZHQueue_new)
+    ZHQueuedealloc11111                      0x08002325   Thumb Code     2  queue.o(i.ZHQueuedealloc11111)
+    __ARM_fpclassify                         0x08002327   Thumb Code    40  fpclassify.o(i.__ARM_fpclassify)
+    _is_digit                                0x0800234f   Thumb Code    14  __printf_wp.o(i._is_digit)
+    deQueue                                  0x0800243d   Thumb Code    50  queue.o(i.deQueue)
+    enQueue                                  0x08002489   Thumb Code    64  queue.o(i.enQueue)
+    getConWithIndex                          0x080024d9   Thumb Code    44  queue.o(i.getConWithIndex)
+    lw_oopc_malloc                           0x08002521   Thumb Code    96  lw_oopc.o(i.lw_oopc_malloc)
+    lw_oopc_report                           0x080025b5   Thumb Code    54  lw_oopc.o(i.lw_oopc_report)
+    main                                     0x08002665   Thumb Code    36  main.o(i.main)
+    myfree                                   0x08002695   Thumb Code    24  memory.o(i.myfree)
+    mymalloc                                 0x080026b1   Thumb Code    28  memory.o(i.mymalloc)
+    mymemperused                             0x080026d1   Thumb Code    42  memory.o(i.mymemperused)
+    mymemset                                 0x08002701   Thumb Code    20  memory.o(i.mymemset)
+    queueDealloc                             0x08002715   Thumb Code    12  queue.o(i.queueDealloc)
+    queueInit                                0x08002721   Thumb Code    34  queue.o(i.queueInit)
+    rootClass_ctor                           0x08002759   Thumb Code     2  lw_oopc.o(i.rootClass_ctor)
+    uart_init                                0x0800275d   Thumb Code   152  log.o(i.uart_init)
+    _get_lc_numeric                          0x080027fd   Thumb Code    44  lc_numeric_c.o(locale$$code)
+    _get_lc_ctype                            0x08002829   Thumb Code    44  lc_ctype_c.o(locale$$code)
+    _printf_fp_dec                           0x08002855   Thumb Code     4  printf1.o(x$fpl$printf1)
+    __I$use$fp                               0x08002858   Number         0  usenofp.o(x$fpl$usenofp)
+    Region$$Table$$Base                      0x08002978   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x08002998   Number         0  anon$$obj.o(Region$$Table)
+    __ctype                                  0x080029c1   Data           0  lc_ctype_c.o(locale$$data)
     TaskNew                                  0x20000018   Data           4  switch.o(.data)
     TaskRuning                               0x2000001c   Data           4  switch.o(.data)
     IdleTask                                 0x20000020   Data           4  switch.o(.data)
@@ -1200,9 +1200,9 @@ Memory Map of the image
 
   Image Entry point : 0x08000131
 
-  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x00002b18, Max: 0x00080000, ABSOLUTE)
+  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x00002b14, Max: 0x00080000, ABSOLUTE)
 
-    Execution Region ER_IROM1 (Base: 0x08000000, Size: 0x00002ac8, Max: 0x00080000, ABSOLUTE)
+    Execution Region ER_IROM1 (Base: 0x08000000, Size: 0x00002ac4, Max: 0x00080000, ABSOLUTE)
 
     Base Addr    Size         Type   Attr      Idx    E Section Name        Object
 
@@ -1352,52 +1352,52 @@ Memory Map of the image
     0x08001fbc   0x00000028   Code   RO          986    i.Task2             main.o
     0x08001fe4   0x00000028   Code   RO          987    i.Task3             main.o
     0x0800200c   0x00000030   Code   RO          988    i.Task4             main.o
-    0x0800203c   0x00000080   Code   RO          162    i.TaskEnd           switch.o
-    0x080020bc   0x0000000c   Code   RO          163    i.TaskIdle          switch.o
-    0x080020c8   0x00000018   Code   RO          494    i.USART_Cmd         stm32f10x_usart.o
-    0x080020e0   0x0000001a   Code   RO          497    i.USART_GetFlagStatus  stm32f10x_usart.o
-    0x080020fa   0x0000004a   Code   RO          500    i.USART_ITConfig    stm32f10x_usart.o
-    0x08002144   0x000000d8   Code   RO          501    i.USART_Init        stm32f10x_usart.o
-    0x0800221c   0x00000008   Code   RO          511    i.USART_SendData    stm32f10x_usart.o
-    0x08002224   0x00000050   Code   RO          223    i.ZHLog             log.o
-    0x08002274   0x0000004c   Code   RO          321    i.ZHOSInit          zhos.o
-    0x080022c0   0x0000003c   Code   RO          249    i.ZHQueue_ctor      queue.o
-    0x080022fc   0x0000002c   Code   RO          250    i.ZHQueue_new       queue.o
-    0x08002328   0x00000002   Code   RO          253    i.ZHQueuedealloc11111  queue.o
-    0x0800232a   0x00000028   Code   RO         1212    i.__ARM_fpclassify  m_ws.l(fpclassify.o)
-    0x08002352   0x0000000e   Code   RO         1097    i._is_digit         c_w.l(__printf_wp.o)
-    0x08002360   0x00000044   Code   RO           97    i._mem_free         memory.o
-    0x080023a4   0x0000002c   Code   RO           98    i._mem_init         memory.o
-    0x080023d0   0x00000070   Code   RO           99    i._mem_malloc       memory.o
-    0x08002440   0x0000004c   Code   RO          254    i.deQueue           queue.o
-    0x0800248c   0x00000050   Code   RO          255    i.enQueue           queue.o
-    0x080024dc   0x00000048   Code   RO          256    i.getConWithIndex   queue.o
-    0x08002524   0x00000094   Code   RO            2    i.lw_oopc_malloc    lw_oopc.o
-    0x080025b8   0x000000b0   Code   RO            3    i.lw_oopc_report    lw_oopc.o
-    0x08002668   0x00000030   Code   RO          989    i.main              main.o
-    0x08002698   0x0000001c   Code   RO          100    i.myfree            memory.o
-    0x080026b4   0x00000020   Code   RO          101    i.mymalloc          memory.o
-    0x080026d4   0x00000030   Code   RO          103    i.mymemperused      memory.o
-    0x08002704   0x00000014   Code   RO          104    i.mymemset          memory.o
-    0x08002718   0x0000000c   Code   RO          257    i.queueDealloc      queue.o
-    0x08002724   0x00000038   Code   RO          258    i.queueInit         queue.o
-    0x0800275c   0x00000002   Code   RO            4    i.rootClass_ctor    lw_oopc.o
-    0x0800275e   0x00000002   PAD
-    0x08002760   0x000000a0   Code   RO          224    i.uart_init         log.o
-    0x08002800   0x0000002c   Code   RO         1199    locale$$code        c_w.l(lc_numeric_c.o)
-    0x0800282c   0x0000002c   Code   RO         1220    locale$$code        c_w.l(lc_ctype_c.o)
-    0x08002858   0x00000004   Code   RO         1130    x$fpl$printf1       fz_ws.l(printf1.o)
-    0x0800285c   0x00000000   Code   RO         1211    x$fpl$usenofp       fz_ws.l(usenofp.o)
-    0x0800285c   0x00000008   Data   RO         1056    .constdata          c_w.l(_printf_wctomb.o)
-    0x08002864   0x00000028   Data   RO         1085    .constdata          c_w.l(_printf_hex_int_ll_ptr.o)
-    0x0800288c   0x00000011   Data   RO         1105    .constdata          c_w.l(__printf_flags_ss_wp.o)
-    0x0800289d   0x00000003   PAD
-    0x080028a0   0x00000094   Data   RO         1174    .constdata          c_w.l(bigflt0.o)
-    0x08002934   0x00000047   Data   RO            5    .conststring        lw_oopc.o
-    0x0800297b   0x00000001   PAD
-    0x0800297c   0x00000020   Data   RO         1346    Region$$Table       anon$$obj.o
-    0x0800299c   0x0000001c   Data   RO         1198    locale$$data        c_w.l(lc_numeric_c.o)
-    0x080029b8   0x00000110   Data   RO         1219    locale$$data        c_w.l(lc_ctype_c.o)
+    0x0800203c   0x0000007c   Code   RO          162    i.TaskEnd           switch.o
+    0x080020b8   0x0000000c   Code   RO          163    i.TaskIdle          switch.o
+    0x080020c4   0x00000018   Code   RO          494    i.USART_Cmd         stm32f10x_usart.o
+    0x080020dc   0x0000001a   Code   RO          497    i.USART_GetFlagStatus  stm32f10x_usart.o
+    0x080020f6   0x0000004a   Code   RO          500    i.USART_ITConfig    stm32f10x_usart.o
+    0x08002140   0x000000d8   Code   RO          501    i.USART_Init        stm32f10x_usart.o
+    0x08002218   0x00000008   Code   RO          511    i.USART_SendData    stm32f10x_usart.o
+    0x08002220   0x00000050   Code   RO          223    i.ZHLog             log.o
+    0x08002270   0x0000004c   Code   RO          321    i.ZHOSInit          zhos.o
+    0x080022bc   0x0000003c   Code   RO          249    i.ZHQueue_ctor      queue.o
+    0x080022f8   0x0000002c   Code   RO          250    i.ZHQueue_new       queue.o
+    0x08002324   0x00000002   Code   RO          253    i.ZHQueuedealloc11111  queue.o
+    0x08002326   0x00000028   Code   RO         1212    i.__ARM_fpclassify  m_ws.l(fpclassify.o)
+    0x0800234e   0x0000000e   Code   RO         1097    i._is_digit         c_w.l(__printf_wp.o)
+    0x0800235c   0x00000044   Code   RO           97    i._mem_free         memory.o
+    0x080023a0   0x0000002c   Code   RO           98    i._mem_init         memory.o
+    0x080023cc   0x00000070   Code   RO           99    i._mem_malloc       memory.o
+    0x0800243c   0x0000004c   Code   RO          254    i.deQueue           queue.o
+    0x08002488   0x00000050   Code   RO          255    i.enQueue           queue.o
+    0x080024d8   0x00000048   Code   RO          256    i.getConWithIndex   queue.o
+    0x08002520   0x00000094   Code   RO            2    i.lw_oopc_malloc    lw_oopc.o
+    0x080025b4   0x000000b0   Code   RO            3    i.lw_oopc_report    lw_oopc.o
+    0x08002664   0x00000030   Code   RO          989    i.main              main.o
+    0x08002694   0x0000001c   Code   RO          100    i.myfree            memory.o
+    0x080026b0   0x00000020   Code   RO          101    i.mymalloc          memory.o
+    0x080026d0   0x00000030   Code   RO          103    i.mymemperused      memory.o
+    0x08002700   0x00000014   Code   RO          104    i.mymemset          memory.o
+    0x08002714   0x0000000c   Code   RO          257    i.queueDealloc      queue.o
+    0x08002720   0x00000038   Code   RO          258    i.queueInit         queue.o
+    0x08002758   0x00000002   Code   RO            4    i.rootClass_ctor    lw_oopc.o
+    0x0800275a   0x00000002   PAD
+    0x0800275c   0x000000a0   Code   RO          224    i.uart_init         log.o
+    0x080027fc   0x0000002c   Code   RO         1199    locale$$code        c_w.l(lc_numeric_c.o)
+    0x08002828   0x0000002c   Code   RO         1220    locale$$code        c_w.l(lc_ctype_c.o)
+    0x08002854   0x00000004   Code   RO         1130    x$fpl$printf1       fz_ws.l(printf1.o)
+    0x08002858   0x00000000   Code   RO         1211    x$fpl$usenofp       fz_ws.l(usenofp.o)
+    0x08002858   0x00000008   Data   RO         1056    .constdata          c_w.l(_printf_wctomb.o)
+    0x08002860   0x00000028   Data   RO         1085    .constdata          c_w.l(_printf_hex_int_ll_ptr.o)
+    0x08002888   0x00000011   Data   RO         1105    .constdata          c_w.l(__printf_flags_ss_wp.o)
+    0x08002899   0x00000003   PAD
+    0x0800289c   0x00000094   Data   RO         1174    .constdata          c_w.l(bigflt0.o)
+    0x08002930   0x00000047   Data   RO            5    .conststring        lw_oopc.o
+    0x08002977   0x00000001   PAD
+    0x08002978   0x00000020   Data   RO         1346    Region$$Table       anon$$obj.o
+    0x08002998   0x0000001c   Data   RO         1198    locale$$data        c_w.l(lc_numeric_c.o)
+    0x080029b4   0x00000110   Data   RO         1219    locale$$data        c_w.l(lc_ctype_c.o)
 
 
     Execution Region RW_IRAM1 (Base: 0x20000000, Size: 0x0000af28, Max: 0x00010000, ABSOLUTE)
@@ -1437,13 +1437,13 @@ Image component sizes
        278          0          0          0          0       1872   stm32f10x_gpio.o
        244         26          0         20          0       3689   stm32f10x_rcc.o
        348          6          0          0          0       4597   stm32f10x_usart.o
-       716        138          0         20          0      20089   switch.o
+       712        136          0         20          0      20109   switch.o
         12          0          0          0          0        405   sys.o
        328         28          0         20          0       2029   system_stm32f10x.o
        192         68          0          4          0       3431   zhos.o
 
     ----------------------------------------------------------------------
-      3954        748        408         80      44660     288767   Object Totals
+      3950        746        408         80      44660     288787   Object Totals
          0          0         32          0          0          0   (incl. Generated)
          8          0          1          0         16          0   (incl. Padding)
 
@@ -1551,15 +1551,15 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-     10028       1004        924         80      44760     288011   Grand Totals
-     10028       1004        924         80      44760     288011   ELF Image Totals
-     10028       1004        924         80          0          0   ROM Totals
+     10024       1002        924         80      44760     288031   Grand Totals
+     10024       1002        924         80      44760     288031   ELF Image Totals
+     10024       1002        924         80          0          0   ROM Totals
 
 ==============================================================================
 
-    Total RO  Size (Code + RO Data)                10952 (  10.70kB)
+    Total RO  Size (Code + RO Data)                10948 (  10.69kB)
     Total RW  Size (RW Data + ZI Data)             44840 (  43.79kB)
-    Total ROM Size (Code + RO Data + RW Data)      11032 (  10.77kB)
+    Total ROM Size (Code + RO Data + RW Data)      11028 (  10.77kB)
 
 ==============================================================================
 
