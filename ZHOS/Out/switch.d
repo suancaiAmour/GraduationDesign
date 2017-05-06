@@ -10,12 +10,12 @@
 .\out\switch.o: .\STM32F10x_FWLib\inc\stm32f10x_usart.h
 .\out\switch.o: .\STM32F10x_FWLib\inc\misc.h
 .\out\switch.o: .\ZHOS\inc\switch.h
-.\out\switch.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
-.\out\switch.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
-.\out\switch.o: .\ZHOS\inc\queue.h
-.\out\switch.o: .\ZHOS\inc\lw_oopc.h
-.\out\switch.o: .\ZHOS\inc\memory.h
 .\out\switch.o: .\ZHOS\inc\ZHOS.h
+.\out\switch.o: .\ZHOS\inc\lw_oopc.h
 .\out\switch.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\out\switch.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\out\switch.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\out\switch.o: .\ZHOS\inc\queue.h
+.\out\switch.o: .\ZHOS\inc\memory.h
 .\out\switch.o: .\ZHOS\inc\log.h
 .\out\switch.o: .\SYS\inc\sys.h
